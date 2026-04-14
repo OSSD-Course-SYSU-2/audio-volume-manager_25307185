@@ -34,51 +34,7 @@ export function PlayerBuilder(name: string, param: Object) {
   Player()
 }
 
-@Builder
-function VolumeSetting() {
-  Column() {
-    Row() {
-      Text($r('app.string.disable'))
-      Toggle({ type: ToggleType.Switch, isOn: false })
-        .onChange((isOn: boolean) => {
-          if (isOn) {
-            AppStorage.setOrCreate('isDisabled', true);
-          } else {
-            AppStorage.setOrCreate('isDisabled', false);
-          }
-        })
-    }
-    .padding({ left: 16, right: 16 })
-    .height(48)
-    .justifyContent(FlexAlign.SpaceBetween)
-    .width('100%')
-    .margin({ bottom: 8 })
 
-    Divider()
-      .backgroundColor('#F1F3F5')
-      .padding({ left: 16, right: 16 })
-      .width('100%')
-
-    Column() {
-      VolumePanelView({
-        text: $r('app.string.audio_stream_volume'),
-        volumeVisible: true,
-        volumeType: VolumeType.AUDIOSTREAM,
-        Percentage: 50
-      })
-    }
-    .padding({ left: 16, right: 16 })
-    .height(80)
-    .width('100%')
-  }
-  .backgroundColor('#FFFFFF')
-  .width('100%')
-  .height(372)
-  .padding({
-    top: 12,
-    bottom: 16
-  })
-}
 
 @Entry
 @Component
@@ -89,8 +45,13 @@ struct Player {
   @StorageLink('systemVolume') volume: number = CommonConstants.INITIAL_VOLUME;
   @State systemVolumeVisible: boolean = false;
   @StorageLink('isDisabled') isDisabled: boolean = false;
-  @State sheetHeight: number = 292;
+  @StorageLink('autoBalanceEnabled') autoBalanceEnabled: boolean = CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED;
+  @StorageLink('compressionRatio') compressionRatio: number = CommonConstants.DEFAULT_COMPRESSION_RATIO;
+  @State sheetHeight: number = 340;
   @State isShow: boolean = false;
+  @Builder volumeSettingBuilder() {
+    VolumeSettingComponent()
+  }
   private timer: number | undefined = 0;
   private volumeUpCallBackFunc: (event: KeyEvent) => void = () => {
   };
@@ -267,7 +228,7 @@ struct Player {
         .borderRadius(42)
         .backgroundColor('#19FFFFFF')
         .justifyContent(FlexAlign.Center)
-        .bindSheet($$this.isShow, VolumeSetting(), {
+        .bindSheet($$this.isShow, this.volumeSettingBuilder, {
           height: this.sheetHeight,
           backgroundColor: '#FFFFFF',
           title: { title: $r('app.string.setting') }
@@ -370,5 +331,132 @@ struct Player {
       .catch((error: BusinessError) => {
         Logger.error(`getMediaContent error: ${error.code}, message: ${error.message}`);
       })
+  }
+}
+
+@Component
+struct VolumeSettingComponent {
+  @StorageLink('autoBalanceEnabled') autoBalanceEnabled: boolean = CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED;
+  @StorageLink('compressionRatio') compressionRatio: number = CommonConstants.DEFAULT_COMPRESSION_RATIO;
+  @StorageLink('isDisabled') isDisabled: boolean = false;
+
+  build() {
+    Column() {
+      Row() {
+        Text($r('app.string.disable'))
+        Toggle({ type: ToggleType.Switch, isOn: this.isDisabled })
+          .onChange((isOn: boolean) => {
+            this.isDisabled = isOn;
+          })
+      }
+      .padding({ left: 16, right: 16 })
+      .height(48)
+      .justifyContent(FlexAlign.SpaceBetween)
+      .width('100%')
+      .margin({ bottom: 8 })
+
+      Divider()
+        .backgroundColor('#F1F3F5')
+        .padding({ left: 16, right: 16 })
+        .width('100%')
+
+      Column() {
+        VolumePanelView({
+          text: $r('app.string.audio_stream_volume'),
+          volumeVisible: true,
+          volumeType: VolumeType.AUDIOSTREAM,
+          Percentage: 50
+        })
+      }
+      .padding({ left: 16, right: 16 })
+      .height(80)
+      .width('100%')
+      .margin({ bottom: 8 })
+
+      Divider()
+        .backgroundColor('#F1F3F5')
+        .padding({ left: 16, right: 16 })
+        .width('100%')
+
+      // Auto Balance Volume Control
+      Column() {
+        // Auto Balance Switch
+        Row() {
+          Text($r('app.string.auto_balance'))
+            .fontSize(16)
+            .fontColor('#182431')
+            .fontWeight(FontWeight.Medium)
+          Toggle({ type: ToggleType.Switch, isOn: this.autoBalanceEnabled })
+            .onChange((isOn: boolean) => {
+              this.autoBalanceEnabled = isOn;
+            })
+        }
+        .height(48)
+        .justifyContent(FlexAlign.SpaceBetween)
+        .width('100%')
+        .margin({ bottom: 12 })
+
+        // Compression Ratio Slider (only visible when auto balance is enabled)
+        if (this.autoBalanceEnabled) {
+          Column() {
+            // 音量平衡功能说明
+            Text($r('app.string.auto_balance_description'))
+              .fontSize(12)
+              .fontColor('#666666')
+              .margin({ bottom: 8 })
+              .width('100%')
+            
+            // Compression strength slider
+            Column() {
+              Row() {
+                Text($r('app.string.compression_strength'))
+                Text(`${Math.round(this.compressionRatio * 100)}%`)
+                  .fontColor(Color.Black)
+                  .opacity(0.6)
+              }
+              .justifyContent(FlexAlign.SpaceBetween)
+              .width('100%')
+              .height(48)
+
+              Stack({ alignContent: Alignment.Top }) {
+                Slider({
+                  value: this.compressionRatio,
+                  min: CommonConstants.MIN_COMPRESSION_RATIO,
+                  max: CommonConstants.MAX_COMPRESSION_RATIO,
+                  step: CommonConstants.COMPRESSION_STEP,
+                  style: SliderStyle.InSet,
+                  reverse: false
+                })
+                .focusable(true)
+                .defaultFocus(true)
+                .focusOnTouch(true)
+                .trackColor('#F1F3F5')
+                .trackThickness(20)
+                .selectedColor('#0A59F7')
+                .onChange((value: number) => {
+                  this.compressionRatio = value;
+                })
+              }
+              .width('100%')
+              .height(40)
+            }
+            .margin({ bottom: 12 })
+            .alignItems(HorizontalAlign.Start)
+            .width('100%')
+            .height(88)
+          }
+          .width('100%')
+        }
+      }
+      .padding({ left: 16, right: 16 })
+      .width('100%')
+    }
+    .backgroundColor('#FFFFFF')
+    .width('100%')
+    .height(400)
+    .padding({
+      top: 12,
+      bottom: 16
+    })
   }
 }

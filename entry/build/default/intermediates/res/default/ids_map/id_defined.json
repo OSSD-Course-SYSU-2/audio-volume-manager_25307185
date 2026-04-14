@@ -25,6 +25,10 @@
 			"id":	"0x01000005"
 		}, {
 			"type":	"string",
+			"name":	"auto_balance",
+			"id":	"0x01000006"
+		}, {
+			"type":	"string",
 			"name":	"audio_stream_volume",
 			"id":	"0x01000007"
 		}, {
@@ -59,6 +63,10 @@
 			"type":	"string",
 			"name":	"introduction_4",
 			"id":	"0x0100000F"
+		}, {
+			"type":	"string",
+			"name":	"compression_strength",
+			"id":	"0x01000010"
 		}, {
 			"type":	"string",
 			"name":	"module_desc",
@@ -171,5 +179,13 @@
 			"type":	"profile",
 			"name":	"router_map",
 			"id":	"0x0100002C"
+		}, {
+			"type":	"string",
+			"name":	"auto_balance_description",
+			"id":	"0x0100002D"
+		}, {
+			"type":	"string",
+			"name":	"introduction_5",
+			"id":	"0x0100002E"
 		}]
 }

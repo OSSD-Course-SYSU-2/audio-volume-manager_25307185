@@ -15,6 +15,10 @@ export enum AudioName {
 export enum VolumeType {
     AUDIOSTREAM = 1
 }
+export enum AutoBalanceMode {
+    OFF = 0,
+    ON = 1
+}
 export const imageList: ResourceStr[] = [
     { "id": 16777252, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
     { "id": 16777251, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" }

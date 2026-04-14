@@ -19,6 +19,7 @@ import { fileIo, ReadOptions } from '@kit.CoreFileKit';
 import { Logger } from '../utils/Logger';
 import { MediaTools } from '../utils/MediaTools';
 import { AudioVolumeController } from '../player/AudioVolumeController';
+import { CommonConstants } from '../common/CommonConstants';
 
 const TAG = 'AudioRenderController';
 
@@ -240,7 +241,24 @@ export class AudioRendererController {
   }
 
   public setVolume(value: number): void {
-    this.audioRenderer?.setVolume(value / 15);
+    // Get auto-balance settings
+    const autoBalanceEnabled: boolean = AppStorage.get('autoBalanceEnabled') ?? CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED;
+    const compressionRatio: number = AppStorage.get('compressionRatio') ?? CommonConstants.DEFAULT_COMPRESSION_RATIO;
+    
+    let finalVolume = value;
+    
+    // Apply auto-balance compression if enabled
+    if (autoBalanceEnabled && this.audioVolumeController) {
+      finalVolume = this.audioVolumeController.calculateDynamicCompression(value, compressionRatio);
+    }
+    
+    // Set the volume to audio renderer (0-1 range)
+    this.audioRenderer?.setVolume(finalVolume / 15);
+    
+    // Store the actual volume (before compression) for UI display
     AppStorage.setOrCreate('audioStreamVolume', value / 15);
+    
+    // Store the compressed volume for reference
+    AppStorage.setOrCreate('compressedVolume', finalVolume / 15);
   }
 }

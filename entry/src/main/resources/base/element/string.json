@@ -41,6 +41,10 @@
       "value": "4.Disable the volume button through the switch."
     },
     {
+      "name": "introduction_5",
+      "value": "5.Auto balance volume function smooths audio volume to avoid sudden changes."
+    },
+    {
       "name": "playback_page",
       "value": "Enter the playback page"
     },
@@ -71,6 +75,18 @@
     {
       "name": "ui_presentation",
       "value": "Only for UI display"
+    },
+    {
+      "name": "auto_balance",
+      "value": "Auto balance volume"
+    },
+    {
+      "name": "compression_strength",
+      "value": "Compression strength"
+    },
+    {
+      "name": "auto_balance_description",
+      "value": "Auto balance volume function smooths audio volume to avoid sudden changes. Higher compression strength results in less volume variation."
     }
   ]
 }

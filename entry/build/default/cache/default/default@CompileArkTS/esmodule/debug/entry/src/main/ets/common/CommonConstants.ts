@@ -25,4 +25,24 @@ export class CommonConstants {
      * Max volume.
      */
     static readonly MAX_VOLUME: number = 15;
+    /**
+     * Auto balance default compression ratio.
+     */
+    static readonly DEFAULT_COMPRESSION_RATIO: number = 0.5;
+    /**
+     * Auto balance default enabled state.
+     */
+    static readonly DEFAULT_AUTO_BALANCE_ENABLED: boolean = false;
+    /**
+     * Minimum compression ratio.
+     */
+    static readonly MIN_COMPRESSION_RATIO: number = 0.1;
+    /**
+     * Maximum compression ratio.
+     */
+    static readonly MAX_COMPRESSION_RATIO: number = 1.0;
+    /**
+     * Compression step.
+     */
+    static readonly COMPRESSION_STEP: number = 0.1;
 }

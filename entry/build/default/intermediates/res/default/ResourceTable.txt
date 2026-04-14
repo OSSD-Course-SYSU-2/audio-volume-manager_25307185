@@ -3,6 +3,9 @@ string EntryAbility_label 0x01000005
 string app_name 0x01000000
 string audio_stream_volume 0x01000007
 string audio_volume_control 0x01000008
+string auto_balance 0x01000006
+string auto_balance_description 0x0100002d
+string compression_strength 0x01000010
 string disable 0x01000009
 string explanation 0x0100000a
 string introduction 0x0100000b
@@ -10,6 +13,7 @@ string introduction_1 0x0100000c
 string introduction_2 0x0100000d
 string introduction_3 0x0100000e
 string introduction_4 0x0100000f
+string introduction_5 0x0100002e
 string module_desc 0x01000011
 string page_show 0x01000012
 string playback_page 0x01000013

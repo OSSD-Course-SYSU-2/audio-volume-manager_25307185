@@ -1,6 +1,11 @@
 if (!("finalizeConstruction" in ViewPU.prototype)) {
     Reflect.set(ViewPU.prototype, "finalizeConstruction", () => { });
 }
+interface VolumeSettingComponent_Params {
+    autoBalanceEnabled?: boolean;
+    compressionRatio?: number;
+    isDisabled?: boolean;
+}
 interface Player_Params {
     imageColor?: string;
     imageLabel?: PixelMap | Resource;
@@ -8,6 +13,8 @@ interface Player_Params {
     volume?: number;
     systemVolumeVisible?: boolean;
     isDisabled?: boolean;
+    autoBalanceEnabled?: boolean;
+    compressionRatio?: number;
     sheetHeight?: number;
     isShow?: boolean;
     timer?: number | undefined;
@@ -50,87 +57,6 @@ export function PlayerBuilder(name: string, param: Object, parent = null) {
         }, { name: "Player" });
     }
 }
-function VolumeSetting(parent = null) {
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Column.create();
-        Column.backgroundColor('#FFFFFF');
-        Column.width('100%');
-        Column.height(372);
-        Column.padding({
-            top: 12,
-            bottom: 16
-        });
-    }, Column);
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Row.create();
-        Row.padding({ left: 16, right: 16 });
-        Row.height(48);
-        Row.justifyContent(FlexAlign.SpaceBetween);
-        Row.width('100%');
-        Row.margin({ bottom: 8 });
-    }, Row);
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Text.create({ "id": 16777225, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
-    }, Text);
-    Text.pop();
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Toggle.create({ type: ToggleType.Switch, isOn: false });
-        Toggle.onChange((isOn: boolean) => {
-            if (isOn) {
-                AppStorage.setOrCreate('isDisabled', true);
-            }
-            else {
-                AppStorage.setOrCreate('isDisabled', false);
-            }
-        });
-    }, Toggle);
-    Toggle.pop();
-    Row.pop();
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Divider.create();
-        Divider.backgroundColor('#F1F3F5');
-        Divider.padding({ left: 16, right: 16 });
-        Divider.width('100%');
-    }, Divider);
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Column.create();
-        Column.padding({ left: 16, right: 16 });
-        Column.height(80);
-        Column.width('100%');
-    }, Column);
-    {
-        (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-            if (isInitialRender) {
-                let componentCall = new VolumePanelView(parent ? parent : this, {
-                    text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
-                    volumeVisible: true,
-                    volumeType: VolumeType.AUDIOSTREAM,
-                    Percentage: 50
-                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 63, col: 7 });
-                ViewPU.create(componentCall);
-                let paramsLambda = () => {
-                    return {
-                        text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
-                        volumeVisible: true,
-                        volumeType: VolumeType.AUDIOSTREAM,
-                        Percentage: 50
-                    };
-                };
-                componentCall.paramsGenerator_ = paramsLambda;
-            }
-            else {
-                (parent ? parent : this).updateStateVarsOfChildByElmtId(elmtId, {
-                    text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
-                    volumeVisible: true,
-                    volumeType: VolumeType.AUDIOSTREAM,
-                    Percentage: 50
-                });
-            }
-        }, { name: "VolumePanelView" });
-    }
-    Column.pop();
-    Column.pop();
-}
 class Player extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -143,7 +69,9 @@ class Player extends ViewPU {
         this.__volume = this.createStorageLink('systemVolume', CommonConstants.INITIAL_VOLUME, "volume");
         this.__systemVolumeVisible = new ObservedPropertySimplePU(false, this, "systemVolumeVisible");
         this.__isDisabled = this.createStorageLink('isDisabled', false, "isDisabled");
-        this.__sheetHeight = new ObservedPropertySimplePU(292, this, "sheetHeight");
+        this.__autoBalanceEnabled = this.createStorageLink('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED, "autoBalanceEnabled");
+        this.__compressionRatio = this.createStorageLink('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO, "compressionRatio");
+        this.__sheetHeight = new ObservedPropertySimplePU(340, this, "sheetHeight");
         this.__isShow = new ObservedPropertySimplePU(false, this, "isShow");
         this.timer = 0;
         this.volumeUpCallBackFunc = () => {
@@ -203,6 +131,8 @@ class Player extends ViewPU {
         this.__volume.purgeDependencyOnElmtId(rmElmtId);
         this.__systemVolumeVisible.purgeDependencyOnElmtId(rmElmtId);
         this.__isDisabled.purgeDependencyOnElmtId(rmElmtId);
+        this.__autoBalanceEnabled.purgeDependencyOnElmtId(rmElmtId);
+        this.__compressionRatio.purgeDependencyOnElmtId(rmElmtId);
         this.__sheetHeight.purgeDependencyOnElmtId(rmElmtId);
         this.__isShow.purgeDependencyOnElmtId(rmElmtId);
     }
@@ -213,6 +143,8 @@ class Player extends ViewPU {
         this.__volume.aboutToBeDeleted();
         this.__systemVolumeVisible.aboutToBeDeleted();
         this.__isDisabled.aboutToBeDeleted();
+        this.__autoBalanceEnabled.aboutToBeDeleted();
+        this.__compressionRatio.aboutToBeDeleted();
         this.__sheetHeight.aboutToBeDeleted();
         this.__isShow.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
@@ -260,6 +192,20 @@ class Player extends ViewPU {
     set isDisabled(newValue: boolean) {
         this.__isDisabled.set(newValue);
     }
+    private __autoBalanceEnabled: ObservedPropertyAbstractPU<boolean>;
+    get autoBalanceEnabled() {
+        return this.__autoBalanceEnabled.get();
+    }
+    set autoBalanceEnabled(newValue: boolean) {
+        this.__autoBalanceEnabled.set(newValue);
+    }
+    private __compressionRatio: ObservedPropertyAbstractPU<number>;
+    get compressionRatio() {
+        return this.__compressionRatio.get();
+    }
+    set compressionRatio(newValue: number) {
+        this.__compressionRatio.set(newValue);
+    }
     private __sheetHeight: ObservedPropertySimplePU<number>;
     get sheetHeight() {
         return this.__sheetHeight.get();
@@ -273,6 +219,23 @@ class Player extends ViewPU {
     }
     set isShow(newValue: boolean) {
         this.__isShow.set(newValue);
+    }
+    volumeSettingBuilder(parent = null) {
+        {
+            this.observeComponentCreation2((elmtId, isInitialRender) => {
+                if (isInitialRender) {
+                    let componentCall = new VolumeSettingComponent(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 53, col: 5 });
+                    ViewPU.create(componentCall);
+                    let paramsLambda = () => {
+                        return {};
+                    };
+                    componentCall.paramsGenerator_ = paramsLambda;
+                }
+                else {
+                    this.updateStateVarsOfChildByElmtId(elmtId, {});
+                }
+            }, { name: "VolumeSettingComponent" });
+        }
     }
     private timer: number | undefined;
     private volumeUpCallBackFunc: (event: KeyEvent) => void;
@@ -365,7 +328,7 @@ class Player extends ViewPU {
                         if (isInitialRender) {
                             let componentCall = new 
                             // Do not display the system volume bar.
-                            SetVolume(this, { volume: this.volume }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 183, col: 9 });
+                            SetVolume(this, { volume: this.volume }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 144, col: 9 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -413,7 +376,7 @@ class Player extends ViewPU {
                             SystemVolumePanel(this, {
                                 volume: this.__volume,
                                 volumeVisible: this.__systemVolumeVisible
-                            }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 186, col: 11 });
+                            }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 147, col: 11 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -452,7 +415,7 @@ class Player extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new ControlAreaComponent(this, { songData: songDataList[0], imageColor: this.imageColor }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 223, col: 11 });
+                            let componentCall = new ControlAreaComponent(this, { songData: songDataList[0], imageColor: this.imageColor }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 184, col: 11 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -523,9 +486,7 @@ class Player extends ViewPU {
             Row.borderRadius(42);
             Row.backgroundColor('#19FFFFFF');
             Row.justifyContent(FlexAlign.Center);
-            Row.bindSheet({ value: this.isShow, changeEvent: newValue => { this.isShow = newValue; } }, { builder: () => {
-                    VolumeSetting.call(this);
-                } }, {
+            Row.bindSheet({ value: this.isShow, changeEvent: newValue => { this.isShow = newValue; } }, { builder: this.volumeSettingBuilder.bind(this) }, {
                 height: this.sheetHeight,
                 backgroundColor: '#FFFFFF',
                 title: { title: { "id": 16777236, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }
@@ -641,6 +602,268 @@ class Player extends ViewPU {
     }
     static getEntryName(): string {
         return "Player";
+    }
+}
+class VolumeSettingComponent extends ViewPU {
+    constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
+        super(parent, __localStorage, elmtId, extraInfo);
+        if (typeof paramsLambda === "function") {
+            this.paramsGenerator_ = paramsLambda;
+        }
+        this.__autoBalanceEnabled = this.createStorageLink('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED, "autoBalanceEnabled");
+        this.__compressionRatio = this.createStorageLink('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO, "compressionRatio");
+        this.__isDisabled = this.createStorageLink('isDisabled', false, "isDisabled");
+        this.setInitiallyProvidedValue(params);
+        this.finalizeConstruction();
+    }
+    setInitiallyProvidedValue(params: VolumeSettingComponent_Params) {
+    }
+    updateStateVars(params: VolumeSettingComponent_Params) {
+    }
+    purgeVariableDependenciesOnElmtId(rmElmtId) {
+        this.__autoBalanceEnabled.purgeDependencyOnElmtId(rmElmtId);
+        this.__compressionRatio.purgeDependencyOnElmtId(rmElmtId);
+        this.__isDisabled.purgeDependencyOnElmtId(rmElmtId);
+    }
+    aboutToBeDeleted() {
+        this.__autoBalanceEnabled.aboutToBeDeleted();
+        this.__compressionRatio.aboutToBeDeleted();
+        this.__isDisabled.aboutToBeDeleted();
+        SubscriberManager.Get().delete(this.id__());
+        this.aboutToBeDeletedInternal();
+    }
+    private __autoBalanceEnabled: ObservedPropertyAbstractPU<boolean>;
+    get autoBalanceEnabled() {
+        return this.__autoBalanceEnabled.get();
+    }
+    set autoBalanceEnabled(newValue: boolean) {
+        this.__autoBalanceEnabled.set(newValue);
+    }
+    private __compressionRatio: ObservedPropertyAbstractPU<number>;
+    get compressionRatio() {
+        return this.__compressionRatio.get();
+    }
+    set compressionRatio(newValue: number) {
+        this.__compressionRatio.set(newValue);
+    }
+    private __isDisabled: ObservedPropertyAbstractPU<boolean>;
+    get isDisabled() {
+        return this.__isDisabled.get();
+    }
+    set isDisabled(newValue: boolean) {
+        this.__isDisabled.set(newValue);
+    }
+    initialRender() {
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.backgroundColor('#FFFFFF');
+            Column.width('100%');
+            Column.height(400);
+            Column.padding({
+                top: 12,
+                bottom: 16
+            });
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Row.create();
+            Row.padding({ left: 16, right: 16 });
+            Row.height(48);
+            Row.justifyContent(FlexAlign.SpaceBetween);
+            Row.width('100%');
+            Row.margin({ bottom: 8 });
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create({ "id": 16777225, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Toggle.create({ type: ToggleType.Switch, isOn: this.isDisabled });
+            Toggle.onChange((isOn: boolean) => {
+                this.isDisabled = isOn;
+            });
+        }, Toggle);
+        Toggle.pop();
+        Row.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Divider.create();
+            Divider.backgroundColor('#F1F3F5');
+            Divider.padding({ left: 16, right: 16 });
+            Divider.width('100%');
+        }, Divider);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Column.create();
+            Column.padding({ left: 16, right: 16 });
+            Column.height(80);
+            Column.width('100%');
+            Column.margin({ bottom: 8 });
+        }, Column);
+        {
+            this.observeComponentCreation2((elmtId, isInitialRender) => {
+                if (isInitialRender) {
+                    let componentCall = new VolumePanelView(this, {
+                        text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
+                        volumeVisible: true,
+                        volumeType: VolumeType.AUDIOSTREAM,
+                        Percentage: 50
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 364, col: 9 });
+                    ViewPU.create(componentCall);
+                    let paramsLambda = () => {
+                        return {
+                            text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
+                            volumeVisible: true,
+                            volumeType: VolumeType.AUDIOSTREAM,
+                            Percentage: 50
+                        };
+                    };
+                    componentCall.paramsGenerator_ = paramsLambda;
+                }
+                else {
+                    this.updateStateVarsOfChildByElmtId(elmtId, {
+                        text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
+                        volumeVisible: true,
+                        volumeType: VolumeType.AUDIOSTREAM,
+                        Percentage: 50
+                    });
+                }
+            }, { name: "VolumePanelView" });
+        }
+        Column.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Divider.create();
+            Divider.backgroundColor('#F1F3F5');
+            Divider.padding({ left: 16, right: 16 });
+            Divider.width('100%');
+        }, Divider);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // Auto Balance Volume Control
+            Column.create();
+            // Auto Balance Volume Control
+            Column.padding({ left: 16, right: 16 });
+            // Auto Balance Volume Control
+            Column.width('100%');
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // Auto Balance Switch
+            Row.create();
+            // Auto Balance Switch
+            Row.height(48);
+            // Auto Balance Switch
+            Row.justifyContent(FlexAlign.SpaceBetween);
+            // Auto Balance Switch
+            Row.width('100%');
+            // Auto Balance Switch
+            Row.margin({ bottom: 12 });
+        }, Row);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Text.create({ "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.fontSize(16);
+            Text.fontColor('#182431');
+            Text.fontWeight(FontWeight.Medium);
+        }, Text);
+        Text.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Toggle.create({ type: ToggleType.Switch, isOn: this.autoBalanceEnabled });
+            Toggle.onChange((isOn: boolean) => {
+                this.autoBalanceEnabled = isOn;
+            });
+        }, Toggle);
+        Toggle.pop();
+        // Auto Balance Switch
+        Row.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            If.create();
+            // Compression Ratio Slider (only visible when auto balance is enabled)
+            if (this.autoBalanceEnabled) {
+                this.ifElseBranchUpdateFunction(0, () => {
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Column.create();
+                        Column.width('100%');
+                    }, Column);
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        // 音量平衡功能说明
+                        Text.create({ "id": 16777261, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+                        // 音量平衡功能说明
+                        Text.fontSize(12);
+                        // 音量平衡功能说明
+                        Text.fontColor('#666666');
+                        // 音量平衡功能说明
+                        Text.margin({ bottom: 8 });
+                        // 音量平衡功能说明
+                        Text.width('100%');
+                    }, Text);
+                    // 音量平衡功能说明
+                    Text.pop();
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        // Compression strength slider
+                        Column.create();
+                        // Compression strength slider
+                        Column.margin({ bottom: 12 });
+                        // Compression strength slider
+                        Column.alignItems(HorizontalAlign.Start);
+                        // Compression strength slider
+                        Column.width('100%');
+                        // Compression strength slider
+                        Column.height(88);
+                    }, Column);
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Row.create();
+                        Row.justifyContent(FlexAlign.SpaceBetween);
+                        Row.width('100%');
+                        Row.height(48);
+                    }, Row);
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Text.create({ "id": 16777232, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+                    }, Text);
+                    Text.pop();
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Text.create(`${Math.round(this.compressionRatio * 100)}%`);
+                        Text.fontColor(Color.Black);
+                        Text.opacity(0.6);
+                    }, Text);
+                    Text.pop();
+                    Row.pop();
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Stack.create({ alignContent: Alignment.Top });
+                        Stack.width('100%');
+                        Stack.height(40);
+                    }, Stack);
+                    this.observeComponentCreation2((elmtId, isInitialRender) => {
+                        Slider.create({
+                            value: this.compressionRatio,
+                            min: CommonConstants.MIN_COMPRESSION_RATIO,
+                            max: CommonConstants.MAX_COMPRESSION_RATIO,
+                            step: CommonConstants.COMPRESSION_STEP,
+                            style: SliderStyle.InSet,
+                            reverse: false
+                        });
+                        Slider.focusable(true);
+                        Slider.defaultFocus(true);
+                        Slider.focusOnTouch(true);
+                        Slider.trackColor('#F1F3F5');
+                        Slider.trackThickness(20);
+                        Slider.selectedColor('#0A59F7');
+                        Slider.onChange((value: number) => {
+                            this.compressionRatio = value;
+                        });
+                    }, Slider);
+                    Stack.pop();
+                    // Compression strength slider
+                    Column.pop();
+                    Column.pop();
+                });
+            }
+            else {
+                this.ifElseBranchUpdateFunction(1, () => {
+                });
+            }
+        }, If);
+        If.pop();
+        // Auto Balance Volume Control
+        Column.pop();
+        Column.pop();
+    }
+    rerender() {
+        this.updateDirtyElements();
     }
 }
 registerNamedRoute(() => new Player(undefined, {}), "", { bundleName: "com.example.audiostreamvolumemanagement", moduleName: "entry", pagePath: "pages/Player", pageFullPath: "entry/src/main/ets/pages/Player", integratedHsp: "false", moduleType: "followWithHap" });

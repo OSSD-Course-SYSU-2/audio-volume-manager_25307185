@@ -34,6 +34,11 @@ export enum VolumeType {
   AUDIOSTREAM = 1
 }
 
+export enum AutoBalanceMode {
+  OFF = 0,
+  ON = 1
+}
+
 export const imageList: ResourceStr[] = [
   $r('app.media.ic_public_play'),
   $r('app.media.ic_public_pause')

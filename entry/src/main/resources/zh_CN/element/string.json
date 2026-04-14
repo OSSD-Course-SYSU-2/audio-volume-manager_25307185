@@ -41,6 +41,10 @@
       "value": "4、通过开关屏蔽音量按键。"
     },
     {
+      "name": "introduction_5",
+      "value": "5、自动平衡音量功能可以平滑音频音量，避免突然变化。"
+    },
+    {
       "name": "playback_page",
       "value": "进入播放页"
     },
@@ -71,6 +75,18 @@
     {
       "name": "ui_presentation",
       "value": "仅作UI展示"
+    },
+    {
+      "name": "auto_balance",
+      "value": "自动平衡音量"
+    },
+    {
+      "name": "compression_strength",
+      "value": "压缩强度"
+    },
+    {
+      "name": "auto_balance_description",
+      "value": "自动平衡音量功能可以平滑音频音量，避免音量突变。压缩强度越高，音量变化越小。"
     }
   ]
 }
