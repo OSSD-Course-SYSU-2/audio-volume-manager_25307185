@@ -37,24 +37,4 @@ export class AudioVolumeController {
     public offStreamVolumeChange(): void {
         this.audioVolumeManager?.off('streamVolumeChange');
     }
-    // Get the current volume of the application.
-    public getAppVolumePercentage(): void {
-        this.audioVolumeManager?.getAppVolumePercentage().then((value: number) => {
-            AppStorage.setOrCreate('appVolume', value);
-        });
-    }
-    // Monitor the changes in the application volume.
-    public appVolumeChange(): void {
-        this.audioVolumeManager?.on('appVolumeChange', (volumeEvent: audio.VolumeEvent) => {
-            AppStorage.setOrCreate('appVolume', volumeEvent.volume);
-        });
-    }
-    // Cancel monitoring.
-    public offAppVolumeChange(): void {
-        this.audioVolumeManager?.off('appVolumeChange');
-    }
-    // Set application volume.
-    public setAppVolumePercentage(value: number): void {
-        this.audioVolumeManager?.setAppVolumePercentage(Math.round(value * 100 / 15));
-    }
 }

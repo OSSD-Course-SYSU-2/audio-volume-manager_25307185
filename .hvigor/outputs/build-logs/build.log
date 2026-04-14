@@ -1627,3 +1627,760 @@ Require stack:
 [2026-04-14T17:20:21.507] [DEBUG] debug-file - worker[1] exits with exit code 1.
 [2026-04-14T17:20:21.507] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
 [2026-04-14T17:20:21.508] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-04-14T17:43:50.546] [DEBUG] debug-file - env: nodejsVersion=v18.20.1
+[2026-04-14T17:43:50.703] [DEBUG] debug-file - env: daemon=true
+[2026-04-14T17:43:50.549] [DEBUG] debug-file - env: hvigor-config.json5 content = {
+  modelVersion: '6.0.2',
+  dependencies: {},
+  execution: {},
+  logging: {},
+  debugging: {},
+  nodeOptions: {}
+}
+[2026-04-14T17:43:52.285] [DEBUG] debug-file - java daemon tryConnect failed Error: connect ECONNREFUSED 127.0.0.1:45050
+[2026-04-14T17:43:52.304] [DEBUG] debug-file - java daemon started at port 45050 pid 21248
+[2026-04-14T17:43:52.353] [DEBUG] debug-file - session manager: set active socket. socketId=WOUq3J46QzcsmAfnAAAB
+[2026-04-14T17:43:53.883] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-04-14T17:43:53.894] [DEBUG] debug-file - Since there is no instance or instance is terminated, create a new worker pool.
+[2026-04-14T17:43:53.896] [DEBUG] debug-file - Worker pool is initialized with config:  {
+  minPoolNum: 2,
+  maxPoolNum: undefined,
+  maxCoreSize: undefined,
+  cacheCapacity: undefined,
+  cacheTtl: undefined
+}
+[2026-04-14T17:43:53.898] [DEBUG] debug-file - Create  resident worker with id: 0.
+[2026-04-14T17:43:53.901] [DEBUG] debug-file - Create  resident worker with id: 1.
+[2026-04-14T17:43:53.904] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-04-14T17:43:53.916] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}
+[2026-04-14T17:43:53.927] [DEBUG] debug-file - Cache service initialization finished in 10 ms 
+[2026-04-14T17:43:53.931] [DEBUG] debug-file - hvigorfile, resolving D:\code\code\class\huawei\audio-volume-management\hvigorfile.ts
+[2026-04-14T17:43:58.290] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-04-14T17:43:58.290] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-04-14T17:43:58.291] [DEBUG] debug-file - Starting plugin build process
+[2026-04-14T17:43:58.291] [DEBUG] debug-file - App plugin prepare start...
+[2026-04-14T17:43:58.292] [DEBUG] debug-file - App plugin prepare end...
+[2026-04-14T17:43:58.292] [DEBUG] debug-file - App plugin creating...
+[2026-04-14T17:43:58.626] [DEBUG] debug-file - App plugin register hook start...
+[2026-04-14T17:43:58.627] [DEBUG] debug-file - App plugin register hook end...
+[2026-04-14T17:43:58.627] [DEBUG] debug-file - Plugin build process completed
+[2026-04-14T17:43:58.629] [DEBUG] debug-file - Start initialize project's product build option map with build mode debug.
+[2026-04-14T17:43:58.630] [DEBUG] debug-file - Picking option from product 'default' with build mode 'debug'.
+[2026-04-14T17:43:58.631] [DEBUG] debug-file - Product 'default' build option initialized
+[2026-04-14T17:43:58.631] [DEBUG] debug-file - End initialize project's product build option map with build mode 'debug'.
+[2026-04-14T17:43:58.635] [DEBUG] debug-file - Obtain build option for product 'default'in this build.
+[2026-04-14T17:43:58.637] [DEBUG] debug-file - not found resModel json file in : D:\code\code\class\huawei\audio-volume-management\entry\src\ohosTest\module.json5
+[2026-04-14T17:43:58.650] [DEBUG] debug-file - No signingConfig found, initRemoteHspCache failed.
+[2026-04-14T17:43:58.655] [DEBUG] debug-file - Local scan or download HarmonyOS sdk components toolchains,ets,js,native,previewer
+[2026-04-14T17:43:58.661] [DEBUG] debug-file - Local scan or download hmscore sdk components toolchains,ets,native
+[2026-04-14T17:43:58.667] [DEBUG] debug-file - Start recording SDK configuration permission data.
+[2026-04-14T17:43:58.749] [DEBUG] debug-file - Sdk init in 97 ms 
+[2026-04-14T17:43:58.760] [DEBUG] debug-file - Project task initialization takes 9 ms 
+[2026-04-14T17:43:58.761] [DEBUG] debug-file - hvigorfile, binding custom plugins []
+[2026-04-14T17:43:58.761] [DEBUG] debug-file - hvigorfile, no custom plugins were found in D:\code\code\class\huawei\audio-volume-management\hvigorfile.ts
+[2026-04-14T17:43:58.761] [DEBUG] debug-file - hvigorfile, resolve finished D:\code\code\class\huawei\audio-volume-management\hvigorfile.ts
+[2026-04-14T17:43:58.762] [DEBUG] debug-file - hvigorfile, resolving D:\code\code\class\huawei\audio-volume-management\entry\hvigorfile.ts
+[2026-04-14T17:43:58.772] [DEBUG] debug-file - hvigorfile, require result:  { default: { plugins: [] } }
+[2026-04-14T17:43:58.773] [DEBUG] debug-file - hvigorfile, binding system plugins null
+[2026-04-14T17:43:58.773] [DEBUG] debug-file - Starting plugin build process
+[2026-04-14T17:43:58.773] [DEBUG] debug-file - Hap plugin creating...
+[2026-04-14T17:43:58.778] [DEBUG] debug-file - failed to load cangjie to dynamically generate schemas: Error: Cannot find module '@ohos/cangjie-build-support/index'
+Require stack:
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\hooks\cangjie-register.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\strategy\stage-init-strategy.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\abstract-plugin-builder.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\builder\app-plugin-builder.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\src\plugin\factory\plugin-factory.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor-ohos-plugin\index.js
+- D:\code\code\class\huawei\audio-volume-management\hvigorfile.ts
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\internal\lifecycle\configuration.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\boot\index.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\cluster\worker-process-lifecycle.js
+- D:\editor\Huawei\DevEco Studio\tools\hvigor\hvigor\src\base\daemon\process\daemon-process-boot-script.js
+[2026-04-14T17:43:58.806] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-04-14T17:43:58.807] [DEBUG] debug-file - Target 'default' config initialized
+[2026-04-14T17:43:58.808] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-04-14T17:43:58.809] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-04-14T17:43:58.809] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-04-14T17:43:58.809] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-04-14T17:43:58.809] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=release
+[2026-04-14T17:43:58.809] [DEBUG] debug-file - Target 'default' config initialized
+[2026-04-14T17:43:58.810] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-04-14T17:43:58.810] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-04-14T17:43:58.810] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-04-14T17:43:58.810] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-04-14T17:43:58.810] [DEBUG] debug-file - Start initialize module-target build option map, moduleName=entry, buildMode=debug
+[2026-04-14T17:43:58.811] [DEBUG] debug-file - Target 'default' config initialized
+[2026-04-14T17:43:58.811] [DEBUG] debug-file - Target 'ohosTest' config initialized
+[2026-04-14T17:43:58.811] [DEBUG] debug-file - Module 'entry' target 'default' build option initialized
+[2026-04-14T17:43:58.811] [DEBUG] debug-file - Module 'entry' target 'ohosTest' build option initialized
+[2026-04-14T17:43:58.811] [DEBUG] debug-file - End initialize module-target build option map, moduleName=entry
+[2026-04-14T17:43:58.812] [DEBUG] debug-file - Obtain build option for module 'entry' target 'default'in this build.
+[2026-04-14T17:43:58.824] [DEBUG] debug-file - Module entry task initialization takes 11 ms 
+[2026-04-14T17:43:58.824] [DEBUG] debug-file - Hap plugin register hook start...
+[2026-04-14T17:43:58.825] [DEBUG] debug-file - Hap plugin register hook end...
+[2026-04-14T17:43:58.825] [DEBUG] debug-file - Plugin build process completed
+[2026-04-14T17:43:58.825] [DEBUG] debug-file - hvigorfile, binding custom plugins []
+[2026-04-14T17:43:58.825] [DEBUG] debug-file - hvigorfile, no custom plugins were found in D:\code\code\class\huawei\audio-volume-management\entry\hvigorfile.ts
+[2026-04-14T17:43:58.825] [DEBUG] debug-file - hvigorfile, resolve finished D:\code\code\class\huawei\audio-volume-management\entry\hvigorfile.ts
+[2026-04-14T17:43:58.865] [DEBUG] debug-file - hvigorfile, resolve hvigorfile dependencies in 40 ms 
+[2026-04-14T17:43:58.866] [DEBUG] debug-file - project has submodules:entry
+[2026-04-14T17:43:58.871] [DEBUG] debug-file - start to load updatedOhPackageInfo to the disk
+[2026-04-14T17:43:58.883] [DEBUG] debug-file - load to the disk finished
+[2026-04-14T17:43:58.886] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-04-14T17:43:58.890] [DEBUG] debug-file - Module audio-volume-management Collected Dependency: 
+[2026-04-14T17:43:58.890] [DEBUG] debug-file - Module audio-volume-management's total dependency: 0
+[2026-04-14T17:43:58.892] [DEBUG] debug-file - Start to initialize dependency information.
+[2026-04-14T17:43:58.901] [DEBUG] debug-file - Module entry Collected Dependency: 
+[2026-04-14T17:43:58.902] [DEBUG] debug-file - Module entry's total dependency: 0
+[2026-04-14T17:43:58.909] [DEBUG] debug-file - Configuration phase cost:4 s 982 ms 
+[2026-04-14T17:43:58.912] [DEBUG] debug-file - Configuration task cost before running: 5 s 8 ms 
+[2026-04-14T17:43:58.933] [DEBUG] debug-file - Executing task :entry:default@PreBuild
+[2026-04-14T17:43:58.936] [DEBUG] debug-file - Task 'entry:default@PreBuild' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:58.966] [DEBUG] debug-file - entry:default@PreBuild is not up-to-date, since the task snapshots are different.
+[2026-04-14T17:43:58.966] [DEBUG] debug-file - Incremental task entry:default@PreBuild pre-execution cost: 22 ms .
+[2026-04-14T17:43:59.306] [DEBUG] debug-file - current product is not Atomic service.
+[2026-04-14T17:43:59.307] [DEBUG] debug-file - Use tool [win32: JAVA_HOME, CLASSPATH]
+ [
+  { JAVA_HOME: 'D:\\editor\\Huawei\\DevEco Studio\\jbr' },
+  { CLASSPATH: undefined }
+]
+[2026-04-14T17:43:59.308] [DEBUG] debug-file - Use tool [win32: NODE_HOME]
+ [ { NODE_HOME: 'D:/editor/Huawei/DevEco Studio/tools/node' } ]
+[2026-04-14T17:43:59.309] [DEBUG] debug-file - entry : default@PreBuild cost memory 8.659507751464844
+[2026-04-14T17:43:59.309] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 405 ms 
+[2026-04-14T17:43:59.314] [INFO] debug-file - Finished :entry:default@PreBuild... after 377 ms 
+[2026-04-14T17:43:59.316] [DEBUG] debug-file - Executing task :entry:default@CreateModuleInfo
+[2026-04-14T17:43:59.316] [DEBUG] debug-file - Task 'entry:default@CreateModuleInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.317] [DEBUG] debug-file - entry : default@CreateModuleInfo cost memory 0.04299163818359375
+[2026-04-14T17:43:59.317] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 413 ms 
+[2026-04-14T17:43:59.318] [INFO] debug-file - Finished :entry:default@CreateModuleInfo... after 2 ms 
+[2026-04-14T17:43:59.320] [DEBUG] debug-file - Executing task :entry:default@GenerateMetadata
+[2026-04-14T17:43:59.321] [DEBUG] debug-file - Task 'entry:default@GenerateMetadata' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.324] [DEBUG] debug-file - Incremental task entry:default@GenerateMetadata pre-execution cost: 3 ms .
+[2026-04-14T17:43:59.324] [DEBUG] debug-file - entry : default@GenerateMetadata cost memory 0.0925140380859375
+[2026-04-14T17:43:59.324] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateMetadata...  
+[2026-04-14T17:43:59.326] [DEBUG] debug-file - Executing task :entry:default@ConfigureCmake
+[2026-04-14T17:43:59.327] [DEBUG] debug-file - entry : default@ConfigureCmake cost memory 0.0144805908203125
+[2026-04-14T17:43:59.327] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 422 ms 
+[2026-04-14T17:43:59.327] [INFO] debug-file - Finished :entry:default@ConfigureCmake... after 1 ms 
+[2026-04-14T17:43:59.329] [DEBUG] debug-file - Executing task :entry:default@MergeProfile
+[2026-04-14T17:43:59.330] [DEBUG] debug-file - Task 'entry:default@MergeProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.334] [DEBUG] debug-file - Incremental task entry:default@MergeProfile pre-execution cost: 4 ms .
+[2026-04-14T17:43:59.334] [DEBUG] debug-file - entry : default@MergeProfile cost memory 0.13414764404296875
+[2026-04-14T17:43:59.334] [INFO] debug-file - UP-TO-DATE :entry:default@MergeProfile...  
+[2026-04-14T17:43:59.337] [DEBUG] debug-file - Executing task :entry:default@CreateBuildProfile
+[2026-04-14T17:43:59.338] [DEBUG] debug-file - Task 'entry:default@CreateBuildProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.340] [DEBUG] debug-file - Incremental task entry:default@CreateBuildProfile pre-execution cost: 2 ms .
+[2026-04-14T17:43:59.340] [DEBUG] debug-file - entry : default@CreateBuildProfile cost memory 0.10327911376953125
+[2026-04-14T17:43:59.341] [INFO] debug-file - UP-TO-DATE :entry:default@CreateBuildProfile...  
+[2026-04-14T17:43:59.343] [DEBUG] debug-file - Executing task :entry:default@PreCheckSyscap
+[2026-04-14T17:43:59.343] [DEBUG] debug-file - entry : default@PreCheckSyscap cost memory 0.01474761962890625
+[2026-04-14T17:43:59.343] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 439 ms 
+[2026-04-14T17:43:59.343] [INFO] debug-file - Finished :entry:default@PreCheckSyscap... after 1 ms 
+[2026-04-14T17:43:59.346] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgContextInfo
+[2026-04-14T17:43:59.356] [DEBUG] debug-file - Task 'entry:default@GeneratePkgContextInfo' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.358] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgContextInfo pre-execution cost: 2 ms .
+[2026-04-14T17:43:59.358] [DEBUG] debug-file - entry : default@GeneratePkgContextInfo cost memory 0.46642303466796875
+[2026-04-14T17:43:59.358] [INFO] debug-file - UP-TO-DATE :entry:default@GeneratePkgContextInfo...  
+[2026-04-14T17:43:59.367] [DEBUG] debug-file - Executing task :entry:default@ProcessIntegratedHsp
+[2026-04-14T17:43:59.368] [DEBUG] debug-file - entry:default@ProcessIntegratedHsp is not up-to-date, since the output file 'D:\code\code\class\huawei\audio-volume-management\build\cache\default\integrated_hsp\integratedHspCache.json' does not exist.
+[2026-04-14T17:43:59.368] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp pre-execution cost: 1 ms .
+[2026-04-14T17:43:59.368] [DEBUG] debug-file - entry : default@ProcessIntegratedHsp cost memory 0.0612945556640625
+[2026-04-14T17:43:59.368] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 464 ms 
+[2026-04-14T17:43:59.369] [INFO] debug-file - Finished :entry:default@ProcessIntegratedHsp... after 2 ms 
+[2026-04-14T17:43:59.371] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithCmake
+[2026-04-14T17:43:59.371] [DEBUG] debug-file - entry : default@BuildNativeWithCmake cost memory 0.014862060546875
+[2026-04-14T17:43:59.371] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 467 ms 
+[2026-04-14T17:43:59.371] [INFO] debug-file - Finished :entry:default@BuildNativeWithCmake... after 1 ms 
+[2026-04-14T17:43:59.374] [DEBUG] debug-file - Executing task :entry:default@MakePackInfo
+[2026-04-14T17:43:59.381] [DEBUG] debug-file - Incremental task entry:default@MakePackInfo pre-execution cost: 5 ms .
+[2026-04-14T17:43:59.381] [DEBUG] debug-file - entry : default@MakePackInfo cost memory 0.14501953125
+[2026-04-14T17:43:59.382] [INFO] debug-file - UP-TO-DATE :entry:default@MakePackInfo...  
+[2026-04-14T17:43:59.385] [DEBUG] debug-file - Executing task :entry:default@SyscapTransform
+[2026-04-14T17:43:59.385] [DEBUG] debug-file - File: 'D:\code\code\class\huawei\audio-volume-management\entry\src\main\syscap.json' from 'sysCapJsonPath' is not exists, just ignore.
+[2026-04-14T17:43:59.389] [DEBUG] debug-file - Task 'entry:default@SyscapTransform' cost while wrapping incremental declarations: 4 ms 
+[2026-04-14T17:43:59.414] [DEBUG] debug-file - entry:default@SyscapTransform is not up-to-date, since the output file 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\syscap\default\rpcid.sc' does not exist.
+[2026-04-14T17:43:59.414] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform pre-execution cost: 25 ms .
+[2026-04-14T17:43:59.415] [DEBUG] debug-file - entry : default@SyscapTransform cost memory 0.16269683837890625
+[2026-04-14T17:43:59.415] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 510 ms 
+[2026-04-14T17:43:59.415] [INFO] debug-file - Finished :entry:default@SyscapTransform... after 31 ms 
+[2026-04-14T17:43:59.419] [DEBUG] debug-file - Executing task :entry:default@ProcessProfile
+[2026-04-14T17:43:59.421] [DEBUG] debug-file - Task 'entry:default@ProcessProfile' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.424] [DEBUG] debug-file - Incremental task entry:default@ProcessProfile pre-execution cost: 2 ms .
+[2026-04-14T17:43:59.424] [DEBUG] debug-file - entry : default@ProcessProfile cost memory 0.1476593017578125
+[2026-04-14T17:43:59.424] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessProfile...  
+[2026-04-14T17:43:59.428] [DEBUG] debug-file - Executing task :entry:default@ProcessRouterMap
+[2026-04-14T17:43:59.439] [DEBUG] debug-file - Incremental task entry:default@ProcessRouterMap pre-execution cost: 7 ms .
+[2026-04-14T17:43:59.440] [DEBUG] debug-file - entry : default@ProcessRouterMap cost memory 0.2335662841796875
+[2026-04-14T17:43:59.442] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessRouterMap...  
+[2026-04-14T17:43:59.444] [DEBUG] debug-file - Executing task :entry:default@ProcessShareConfig
+[2026-04-14T17:43:59.450] [DEBUG] debug-file - Incremental task entry:default@ProcessShareConfig pre-execution cost: 4 ms .
+[2026-04-14T17:43:59.450] [DEBUG] debug-file - entry : default@ProcessShareConfig cost memory 0.15375518798828125
+[2026-04-14T17:43:59.451] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessShareConfig...  
+[2026-04-14T17:43:59.453] [DEBUG] debug-file - Executing task :entry:default@ProcessStartupConfig
+[2026-04-14T17:43:59.453] [DEBUG] debug-file - Task 'entry:default@ProcessStartupConfig' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.456] [DEBUG] debug-file - entry:default@ProcessStartupConfig is not up-to-date, since the output file 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\startup\default\startup_config.json' does not exist.
+[2026-04-14T17:43:59.456] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig pre-execution cost: 2 ms .
+[2026-04-14T17:43:59.458] [DEBUG] debug-file - entry : default@ProcessStartupConfig cost memory 0.144744873046875
+[2026-04-14T17:43:59.458] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 553 ms 
+[2026-04-14T17:43:59.459] [INFO] debug-file - Finished :entry:default@ProcessStartupConfig... after 5 ms 
+[2026-04-14T17:43:59.461] [DEBUG] debug-file - Executing task :entry:default@BuildNativeWithNinja
+[2026-04-14T17:43:59.462] [DEBUG] debug-file - entry : default@BuildNativeWithNinja cost memory 0.022308349609375
+[2026-04-14T17:43:59.462] [DEBUG] debug-file - runTaskFromQueue task cost before running: 5 s 557 ms 
+[2026-04-14T17:43:59.462] [INFO] debug-file - Finished :entry:default@BuildNativeWithNinja... after 2 ms 
+[2026-04-14T17:43:59.466] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@ProcessResource
+[2026-04-14T17:43:59.470] [DEBUG] debug-file - Executing task :entry:default@ProcessResource
+[2026-04-14T17:43:59.470] [DEBUG] debug-file - Task 'entry:default@ProcessResource' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.473] [DEBUG] debug-file - Incremental task entry:default@ProcessResource pre-execution cost: 2 ms .
+[2026-04-14T17:43:59.473] [DEBUG] debug-file - entry : default@ProcessResource cost memory 0.39072418212890625
+[2026-04-14T17:43:59.477] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessResource...  
+[2026-04-14T17:43:59.482] [DEBUG] debug-file - Executing task :entry:default@GenerateLoaderJson
+[2026-04-14T17:43:59.485] [DEBUG] debug-file - Task 'entry:default@GenerateLoaderJson' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:43:59.509] [DEBUG] debug-file - Incremental task entry:default@GenerateLoaderJson pre-execution cost: 14 ms .
+[2026-04-14T17:43:59.509] [DEBUG] debug-file - entry : default@GenerateLoaderJson cost memory 0.600555419921875
+[2026-04-14T17:43:59.517] [INFO] debug-file - UP-TO-DATE :entry:default@GenerateLoaderJson...  
+[2026-04-14T17:43:59.521] [DEBUG] debug-file - Executing task :entry:default@ProcessLibs
+[2026-04-14T17:43:59.527] [DEBUG] debug-file - Incremental task entry:default@ProcessLibs pre-execution cost: 3 ms .
+[2026-04-14T17:43:59.527] [DEBUG] debug-file - entry : default@ProcessLibs cost memory 0.114013671875
+[2026-04-14T17:43:59.528] [INFO] debug-file - UP-TO-DATE :entry:default@ProcessLibs...  
+[2026-04-14T17:43:59.531] [DEBUG] debug-file - restool module names: entry; moduleName=entry, taskName=default@CompileResource
+[2026-04-14T17:43:59.533] [DEBUG] debug-file - Executing task :entry:default@CompileResource
+[2026-04-14T17:43:59.555] [DEBUG] debug-file - entry:default@CompileResource is not up-to-date, since the input file 'D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources' has been changed.
+[2026-04-14T17:43:59.556] [DEBUG] debug-file - Incremental task entry:default@CompileResource pre-execution cost: 20 ms .
+[2026-04-14T17:43:59.564] [DEBUG] debug-file - Use tool [D:\editor\Huawei\DevEco Studio\sdk\default\openharmony\toolchains\restool.exe]
+ [
+  'D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\restool.exe',
+  '-l',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\resConfig.json'
+]
+[2026-04-14T17:43:59.566] [DEBUG] debug-file - current process  memoryUsage: {
+  rss: 273481728,
+  heapTotal: 169373696,
+  heapUsed: 134589304,
+  external: 3030661,
+  arrayBuffers: 97772
+} os memoryUsage :11.52926254272461
+[2026-04-14T17:44:00.609] [DEBUG] debug-file - Info: Pack: normal pack mode
+
+[2026-04-14T17:44:00.716] [DEBUG] debug-file - Info: hardware concurrency count is : 32
+Info: thread count is : 32
+
+[2026-04-14T17:44:00.718] [DEBUG] debug-file - Info: thread pool is started
+
+[2026-04-14T17:44:00.721] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-04-14T17:44:00.742] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-04-14T17:44:00.742] [DEBUG] debug-file - Warning: 'D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources\base\media\background.png' is defined repeatedly.
+Warning: 'D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources\base\media\layered_image.json' is defined repeatedly.
+Warning: 'D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources\base\media\foreground.png' is defined repeatedly.
+
+[2026-04-14T17:44:00.759] [DEBUG] debug-file - Info: GenericCompiler::CompileFiles
+
+[2026-04-14T17:44:00.771] [DEBUG] debug-file - 04-14 17:44:00.771 23620  3276 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-04-14T17:44:00.772] [DEBUG] debug-file - 04-14 17:44:00.771 23620  3276 E C01400/ImageTranscoderUtils: ImageFilter IN D:\code\code\class\huawei\audio-volume-management\AppScope\resources\base\media\background.png
+
+[2026-04-14T17:44:00.849] [DEBUG] debug-file - 04-14 17:44:00.849 23620  3276 E C01400/ImageTranscoderUtils: DecodeToRGBA IN
+
+[2026-04-14T17:44:00.850] [DEBUG] debug-file - 04-14 17:44:00.849 23620  3276 E C01400/ImageTranscoderUtils: ImageFilter IN D:\code\code\class\huawei\audio-volume-management\AppScope\resources\base\media\foreground.png
+
+[2026-04-14T17:44:00.909] [DEBUG] debug-file - Info: can't scale media json file.
+
+[2026-04-14T17:44:00.909] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at D:\code\code\class\huawei\audio-volume-management\AppScope\resources\base\media\background.png
+
+[2026-04-14T17:44:00.909] [DEBUG] debug-file - Warning: The width or height of the png file referenced by the icon exceeds the limit (41 pixels)
+at D:\code\code\class\huawei\audio-volume-management\AppScope\resources\base\media\foreground.png
+Warning: D:\code\code\class\huawei\audio-volume-management\AppScope\resources\base\media\layered_image.json is not png format
+
+[2026-04-14T17:44:00.916] [DEBUG] debug-file - Info: restool resources compile success.
+
+[2026-04-14T17:44:00.918] [DEBUG] debug-file - Info: thread pool is stopped
+
+[2026-04-14T17:44:00.987] [DEBUG] debug-file - entry : default@CompileResource cost memory -9.284622192382812
+[2026-04-14T17:44:00.987] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 82 ms 
+[2026-04-14T17:44:00.989] [INFO] debug-file - Finished :entry:default@CompileResource... after 1 s 455 ms 
+[2026-04-14T17:44:00.992] [DEBUG] debug-file - Executing task :entry:default@DoNativeStrip
+[2026-04-14T17:44:00.992] [DEBUG] debug-file - Task 'entry:default@DoNativeStrip' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:44:00.994] [DEBUG] debug-file - Incremental task entry:default@DoNativeStrip pre-execution cost: 2 ms .
+[2026-04-14T17:44:00.994] [DEBUG] debug-file - entry : default@DoNativeStrip cost memory 0.08377838134765625
+[2026-04-14T17:44:00.994] [INFO] debug-file - UP-TO-DATE :entry:default@DoNativeStrip...  
+[2026-04-14T17:44:00.997] [DEBUG] debug-file - Executing task :entry:default@CompileArkTS
+[2026-04-14T17:44:00.998] [DEBUG] debug-file - obfuscationOptions: undefined
+[2026-04-14T17:44:01.001] [DEBUG] debug-file - Task 'entry:default@CompileArkTS' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:44:01.013] [DEBUG] debug-file - entry:default@CompileArkTS is not up-to-date, since the input file 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\ResourceTable.txt' has been changed.
+[2026-04-14T17:44:01.013] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS pre-execution cost: 8 ms .
+[2026-04-14T17:44:01.039] [DEBUG] debug-file - build config:
+[2026-04-14T17:44:01.040] [DEBUG] debug-file - {
+  moduleType: 'entry',
+  perf: 0,
+  targetName: '.default',
+  packageManagerType: 'ohpm',
+  localPropertiesPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\local.properties',
+  isPreview: false,
+  isOhosTest: false,
+  isLocalTest: false,
+  buildMode: 'Debug',
+  hotReloadBuild: undefined,
+  watchMode: 'false',
+  aceProfilePath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\resources\\base\\profile',
+  etsLoaderPath: 'D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader',
+  modulePath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry',
+  testFrameworkPar: {
+    testMode: undefined,
+    coveragePathFilter: undefined,
+    coverageMode: undefined
+  },
+  needCoverageInsert: false,
+  debugLine: false,
+  projectTopDir: 'D:\\code\\code\\class\\huawei\\audio-volume-management',
+  compileSdkVersion: 22,
+  compatibleSdkVersion: 21,
+  originCompatibleSdkVersion: '6.0.1(21)',
+  compatibleSdkVersionStage: undefined,
+  bundleName: 'c***t',
+  etsLoaderVersion: '6.0.2.130',
+  etsLoaderReleaseType: 'Release',
+  aotCompileMode: 'type',
+  apPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\modules.ap',
+  entryModuleName: 'entry',
+  entryModuleVersion: '1.0.0',
+  entryPackageName: 'entry',
+  allModuleNameHash: 'd786f4a975e3e8e98013db4291e009a5037fb4a959201279ce80ebbdbf12e1f6',
+  externalApiPaths: [ 'D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\hms\\ets' ],
+  compilerTypes: [],
+  isCrossplatform: false,
+  hvigorPluginFile: undefined,
+  compilePluginPath: undefined,
+  buildGeneratedProfilePath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\generated\\profile\\default',
+  bundleType: 'app',
+  arkTSVersion: undefined,
+  apiVersion: 22,
+  needCompleteSourcesMap: false,
+  isFaMode: false,
+  buildDir: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build',
+  deviceTypes: [ 'phone' ],
+  pkgContextInfo: {
+    entry: {
+      packageName: 'entry',
+      bundleName: '*****',
+      moduleName: '',
+      version: '',
+      entryPath: 'src/main/',
+      isSO: false,
+      dependencyAlias: ''
+    }
+  },
+  ohPackagePathMap: {},
+  dependencyAliasMap: {},
+  permission: { requestPermissions: undefined, definePermissions: undefined },
+  useGetCurrentBundleName: false,
+  projectArkOption: undefined,
+  sourceMapDir: undefined,
+  branchElimination: false,
+  transformLib: undefined,
+  tsImportSendable: false,
+  resolveConflictMode: true,
+  depName2RootPath: {},
+  depName2DepInfo: {},
+  rootPathSet: [ 'D:\\code\\code\\class\\huawei\\audio-volume-management' ],
+  useNativeResolver: true,
+  shouldEmitJs: true,
+  useTscResolve: false,
+  singleFileEmit: false,
+  userProjectConfig: {
+    autoLazyImport: false,
+    allowEmptyBundleName: false,
+    reExportCheckMode: 'noCheck',
+    executionMode: 'memory',
+    usePathPlaceholder: false,
+    writeRollupCache: true,
+    isExpandImportEnabled: false,
+    expandImportExclude: '',
+    lazyImportExclude: '',
+    lazyImportInclude: '',
+    ignoreCrossplatformCheck: false,
+    isHarDeduplicateEnabled: false,
+    skipOhModulesLint: false,
+    enableStrictCheckOHModule: false,
+    disableSendableCheckRules: [],
+    useDeclarationFileSignature: false,
+    customizedOptions: undefined,
+    integratedHsp: false,
+    isPreloadSoEnabled: false
+  },
+  executionMode: 'memory',
+  arkCompileCachePath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule',
+  autoLazyFilter: undefined,
+  isHarDeduplicateEnabled: false,
+  intermediateHarDuplicateDirPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\har_duplicate\\default',
+  autoLazyImport: false,
+  allowEmptyBundleName: false,
+  reExportCheckMode: 'noCheck',
+  usePathPlaceholder: false,
+  writeRollupCache: true,
+  isExpandImportEnabled: false,
+  expandImportExclude: '',
+  lazyImportExclude: '',
+  lazyImportInclude: '',
+  ignoreCrossplatformCheck: false,
+  skipOhModulesLint: false,
+  enableStrictCheckOHModule: false,
+  disableSendableCheckRules: [],
+  useDeclarationFileSignature: false,
+  customizedOptions: undefined,
+  integratedHsp: false,
+  isPreloadSoEnabled: false,
+  strictMode: {
+    caseSensitiveCheck: true,
+    useNormalizedOHMUrl: true,
+    noExternalImportByPath: true
+  },
+  useNormalizedOHMUrl: true,
+  caseSensitiveCheck: true,
+  aceModuleJsonPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\ark_module.json',
+  appResource: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\ResourceTable.txt',
+  rawFileResource: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\resources\\rawfile',
+  resourceTableHash: '2e7cdcc7ad7410b0c53ee0ac45630b7f3ca319a0855533e559f185b890b67509',
+  runtimeOS: 'HarmonyOS',
+  sdkInfo: 'false:22:6.0.2.130:Release',
+  aceModuleRoot: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets',
+  compileMode: 'esmodule',
+  aceSuperVisualPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\supervisual',
+  aceBuildJson: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\loader\\default\\loader.json',
+  cachePath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule\\debug',
+  aceModuleBuild: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  supportChunks: true,
+  declaredFilesPath: undefined,
+  shouldCollectDirectImportees: false,
+  isByteCodeHarOptimize: false,
+  expandImportPath: undefined,
+  pkgNameToPkgBriefInfo: {
+    entry: {
+      pkgRoot: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry',
+      originalSourceRoots: undefined,
+      sourceRoots: [Array],
+      pkgName: 'entry'
+    }
+  },
+  projectModel: {
+    'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main': {
+      moduleName: 'entry',
+      modulePkgPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry',
+      belongProjectPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management'
+    },
+    'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\.test\\default\\intermediates\\src\\ohosTest\\ets': {
+      moduleName: 'entry',
+      modulePkgPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry',
+      belongProjectPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management'
+    },
+    'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\ohosTest': {
+      moduleName: 'entry',
+      modulePkgPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry',
+      belongProjectPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management'
+    },
+    'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry': {
+      moduleName: 'entry',
+      modulePkgPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry',
+      belongProjectPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management'
+    },
+    'D:\\code\\code\\class\\huawei\\audio-volume-management': {
+      moduleName: 'audio-volume-management',
+      modulePkgPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management',
+      belongProjectPath: 'D:\\code\\code\\class\\huawei\\audio-volume-management'
+    }
+  },
+  pkgJsonFileHash: '6a8bcb4d0fc449f3649fe715009b97b8f85121602e1d5f72220f50a6fb3bff4f',
+  allModulePaths: [ 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry' ],
+  routerMap: {},
+  obfuscationOptions: undefined,
+  byteCodeHarToDependencyKeys: undefined,
+  compileBlockPkg: [],
+  mockParams: {
+    decorator: '@MockSetup',
+    packageName: '@ohos/hamock',
+    etsSourceRootPath: 'src/main/ets',
+    mockConfigPath: undefined,
+    mockConfigKey2ModuleInfo: {},
+    source2ModuleIdMap: {}
+  },
+  copyCodeResourceEnable: false,
+  copyCodeResourceExcludes: [],
+  copyCodeResourceIncludes: undefined,
+  uiTransformOptimization: false,
+  sdkPath: 'D:/editor/Huawei/DevEco Studio/sdk',
+  needPreloadSoFileSet: {},
+  preloadSoFilePath: 'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\preload\\default\\preload.json',
+  useSourceHash: false,
+  localModuleParamMap: {},
+  otherPaths: {
+    'entry/*': [
+      '..\\*',
+      '..\\..\\..\\build\\default\\generated\\profile\\default\\*'
+    ]
+  },
+  collectImportersConfig: undefined
+}
+[2026-04-14T17:44:01.041] [DEBUG] debug-file - Compile arkts with external api path: D:\editor\Huawei\DevEco Studio\sdk\default\hms\ets
+[2026-04-14T17:44:01.044] [DEBUG] debug-file - default@CompileArkTS work[0] is submitted.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - default@CompileArkTS work[0] is pushed to ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[31] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[30] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[29] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[28] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[27] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[26] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.045] [DEBUG] debug-file - A work dispatched to worker[25] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[24] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[23] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[22] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[21] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[20] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[19] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[18] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[17] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[16] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[15] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[14] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.046] [DEBUG] debug-file - A work dispatched to worker[13] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[12] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[11] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[10] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[9] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[8] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[7] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[6] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - A work dispatched to worker[5] failed because unable to get work from ready queue.
+[2026-04-14T17:44:01.047] [DEBUG] debug-file - Create  resident worker with id: 4.
+[2026-04-14T17:44:01.049] [DEBUG] debug-file - default@CompileArkTS work[0] has been dispatched to worker[4].
+[2026-04-14T17:44:01.050] [DEBUG] debug-file - default@CompileArkTS work[0] is dispatched.
+[2026-04-14T17:44:01.050] [DEBUG] debug-file - entry : default@CompileArkTS cost memory 2.0229644775390625
+[2026-04-14T17:44:01.053] [DEBUG] debug-file - Executing task :entry:default@BuildJS
+[2026-04-14T17:44:01.054] [DEBUG] debug-file - Task 'entry:default@BuildJS' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:44:01.060] [DEBUG] debug-file - entry : default@BuildJS cost memory 0.1722412109375
+[2026-04-14T17:44:01.060] [DEBUG] debug-file - runTaskFromQueue task cost before running: 7 s 156 ms 
+[2026-04-14T17:44:01.060] [INFO] debug-file - Finished :entry:default@BuildJS... after 7 ms 
+[2026-04-14T17:44:01.062] [DEBUG] debug-file - Executing task :entry:default@CacheNativeLibs
+[2026-04-14T17:44:01.063] [DEBUG] debug-file - Task 'entry:default@CacheNativeLibs' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:44:01.065] [DEBUG] debug-file - Incremental task entry:default@CacheNativeLibs pre-execution cost: 2 ms .
+[2026-04-14T17:44:01.066] [DEBUG] debug-file - entry : default@CacheNativeLibs cost memory 0.09961700439453125
+[2026-04-14T17:44:01.066] [INFO] debug-file - UP-TO-DATE :entry:default@CacheNativeLibs...  
+[2026-04-14T17:44:17.881] [WARN] debug-file - [33mWARN: [33m[33mArkTS:WARN File: D:/code/code/class/huawei/audio-volume-management/entry/src/main/ets/player/AudioVolumeController.ets:30:18
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: D:/code/code/class/huawei/audio-volume-management/entry/src/main/ets/player/AudioVolumeController.ets:37:18
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: D:/code/code/class/huawei/audio-volume-management/entry/src/main/ets/player/AudioVolumeController.ets:43:18
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+[33mWARN: [33m[33mArkTS:WARN File: D:/code/code/class/huawei/audio-volume-management/entry/src/main/ets/player/AudioVolumeController.ets:49:5
+ Function may throw exceptions. Special handling is required.
+[39m[39m
+
+[2026-04-14T17:44:17.883] [DEBUG] debug-file - Ark compile task finished.finished time is 4386548087700
+[2026-04-14T17:44:17.887] [DEBUG] debug-file - worker[4] has one work done.
+[2026-04-14T17:44:17.903] [DEBUG] debug-file - default@CompileArkTS work[0] done.
+[2026-04-14T17:44:17.905] [DEBUG] debug-file - A work dispatched to worker[4] failed because unable to get work from ready queue.
+[2026-04-14T17:44:17.913] [INFO] debug-file - Finished :entry:default@CompileArkTS... after 12 s 220 ms 
+[2026-04-14T17:44:17.916] [DEBUG] debug-file - Executing task :entry:default@GeneratePkgModuleJson
+[2026-04-14T17:44:17.917] [DEBUG] debug-file - File: 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-04-14T17:44:17.919] [DEBUG] debug-file - Error occurs while handling @Input 'shouldDeduplicateHar': The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+[2026-04-14T17:44:17.919] [DEBUG] debug-file - Task 'entry:default@GeneratePkgModuleJson' cost while wrapping incremental declarations: 3 ms 
+[2026-04-14T17:44:17.922] [DEBUG] debug-file - entry:default@GeneratePkgModuleJson is not up-to-date, since the input file 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\module.json' has been changed.
+[2026-04-14T17:44:17.923] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson pre-execution cost: 3 ms .
+[2026-04-14T17:44:17.930] [DEBUG] debug-file - entry : default@GeneratePkgModuleJson cost memory 0.20548248291015625
+[2026-04-14T17:44:17.930] [DEBUG] debug-file - runTaskFromQueue task cost before running: 24 s 26 ms 
+[2026-04-14T17:44:17.931] [INFO] debug-file - Finished :entry:default@GeneratePkgModuleJson... after 14 ms 
+[2026-04-14T17:44:17.936] [DEBUG] debug-file - Executing task :entry:default@ProcessCompiledResources
+[2026-04-14T17:44:17.937] [DEBUG] debug-file - File: 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\preload\default\preload.json' from 'preloadSoJsonPath' is not exists, just ignore.
+[2026-04-14T17:44:17.937] [DEBUG] debug-file - Task 'entry:default@ProcessCompiledResources' cost while wrapping incremental declarations: 1 ms 
+[2026-04-14T17:44:17.939] [DEBUG] debug-file - entry : default@ProcessCompiledResources cost memory 0.0612640380859375
+[2026-04-14T17:44:17.939] [DEBUG] debug-file - runTaskFromQueue task cost before running: 24 s 34 ms 
+[2026-04-14T17:44:17.939] [INFO] debug-file - Finished :entry:default@ProcessCompiledResources... after 3 ms 
+[2026-04-14T17:44:17.945] [DEBUG] debug-file - Executing task :entry:default@PackageHap
+[2026-04-14T17:44:17.961] [DEBUG] debug-file - entry:default@PackageHap is not up-to-date, since the input file 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\module.json' has been changed.
+[2026-04-14T17:44:17.961] [DEBUG] debug-file - Incremental task entry:default@PackageHap pre-execution cost: 11 ms .
+[2026-04-14T17:44:17.970] [DEBUG] debug-file - Use tool [D:\editor\Huawei\DevEco Studio\sdk\default\openharmony\toolchains\lib\app_packing_tool.jar]
+ [
+  'java',
+  '-Dfile.encoding=GBK',
+  '-jar',
+  'D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\toolchains\\lib\\app_packing_tool.jar',
+  '--mode',
+  'hap',
+  '--force',
+  'true',
+  '--lib-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\stripped_native_libs\\default',
+  '--json-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\package\\default\\module.json',
+  '--resources-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\resources',
+  '--index-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\res\\default\\resources.index',
+  '--pack-info-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\outputs\\default\\pack.info',
+  '--out-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\outputs\\default\\entry-default-unsigned.hap',
+  '--ets-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\loader_out\\default\\ets',
+  '--pkg-context-path',
+  'D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\build\\default\\intermediates\\loader\\default\\pkgContextInfo.json'
+]
+[2026-04-14T17:44:19.347] [DEBUG] debug-file - java daemon socket received message:{"code":0,"message":"pack success"}
+[2026-04-14T17:44:19.363] [DEBUG] debug-file - entry : default@PackageHap cost memory -28.034690856933594
+[2026-04-14T17:44:19.363] [DEBUG] debug-file - runTaskFromQueue task cost before running: 25 s 459 ms 
+[2026-04-14T17:44:19.366] [INFO] debug-file - Finished :entry:default@PackageHap... after 1 s 419 ms 
+[2026-04-14T17:44:19.371] [DEBUG] debug-file - Executing task :entry:default@PackingCheck
+[2026-04-14T17:44:19.406] [DEBUG] debug-file - entry : default@PackingCheck cost memory 0.860748291015625
+[2026-04-14T17:44:19.406] [DEBUG] debug-file - runTaskFromQueue task cost before running: 25 s 502 ms 
+[2026-04-14T17:44:19.407] [INFO] debug-file - Finished :entry:default@PackingCheck... after 36 ms 
+[2026-04-14T17:44:19.411] [DEBUG] debug-file - Executing task :entry:default@SignHap
+[2026-04-14T17:44:19.411] [WARN] debug-file - Will skip sign 'hos_hap'. No signingConfigs profile is configured in current project.
+             If needed, configure the signingConfigs in D:\code\code\class\huawei\audio-volume-management\build-profile.json5.
+[2026-04-14T17:44:19.418] [DEBUG] debug-file - entry:default@SignHap is not up-to-date, since the input file 'D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\entry-default-unsigned.hap' has been changed.
+[2026-04-14T17:44:19.419] [DEBUG] debug-file - Incremental task entry:default@SignHap pre-execution cost: 6 ms .
+[2026-04-14T17:44:19.424] [DEBUG] debug-file - entry : default@SignHap cost memory -0.72772216796875
+[2026-04-14T17:44:19.425] [DEBUG] debug-file - runTaskFromQueue task cost before running: 25 s 520 ms 
+[2026-04-14T17:44:19.427] [INFO] debug-file - Finished :entry:default@SignHap... after 14 ms 
+[2026-04-14T17:44:19.434] [DEBUG] debug-file - Executing task :entry:default@CollectDebugSymbol
+[2026-04-14T17:44:19.440] [DEBUG] debug-file - entry : default@CollectDebugSymbol cost memory 0.1020965576171875
+[2026-04-14T17:44:19.440] [DEBUG] debug-file - runTaskFromQueue task cost before running: 25 s 536 ms 
+[2026-04-14T17:44:19.441] [INFO] debug-file - Finished :entry:default@CollectDebugSymbol... after 7 ms 
+[2026-04-14T17:44:19.442] [DEBUG] debug-file - Executing task :entry:assembleHap
+[2026-04-14T17:44:19.443] [DEBUG] debug-file - entry : assembleHap cost memory 0.0128326416015625
+[2026-04-14T17:44:19.443] [DEBUG] debug-file - runTaskFromQueue task cost before running: 25 s 538 ms 
+[2026-04-14T17:44:19.444] [INFO] debug-file - Finished :entry:assembleHap... after 1 ms 
+[2026-04-14T17:44:19.463] [INFO] debug-file - BUILD SUCCESSFUL in 25 s 558 ms 
+[2026-04-14T17:44:19.469] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\AppScope\app.json5 cache by regenerate.
+[2026-04-14T17:44:19.470] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\entry\src\main\module.json5 cache by regenerate.
+[2026-04-14T17:44:19.470] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\build-profile.json5 cache by regenerate.
+[2026-04-14T17:44:19.471] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\entry\build-profile.json5 cache by regenerate.
+[2026-04-14T17:44:19.472] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources\base\profile\router_map.json cache by regenerate.
+[2026-04-14T17:44:19.473] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources\base\profile\main_pages.json cache by regenerate.
+[2026-04-14T17:44:19.474] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\hvigor\hvigor-config.json5 cache by regenerate.
+[2026-04-14T17:44:19.475] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\entry\oh-package.json5 cache by regenerate.
+[2026-04-14T17:44:19.476] [DEBUG] debug-file - Update task entry:default@PreBuild input file:D:\code\code\class\huawei\audio-volume-management\oh-package.json5 cache by regenerate.
+[2026-04-14T17:44:19.477] [DEBUG] debug-file - Incremental task entry:default@PreBuild post-execution cost:13 ms .
+[2026-04-14T17:44:19.478] [DEBUG] debug-file - Update task entry:default@CreateModuleInfo output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\generated\profile\default\ModuleInfo.ts cache.
+[2026-04-14T17:44:19.479] [DEBUG] debug-file - Incremental task entry:default@CreateModuleInfo post-execution cost:2 ms .
+[2026-04-14T17:44:19.479] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateMetadata is up-to-date.
+[2026-04-14T17:44:19.480] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MergeProfile is up-to-date.
+[2026-04-14T17:44:19.480] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CreateBuildProfile is up-to-date.
+[2026-04-14T17:44:19.480] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GeneratePkgContextInfo is up-to-date.
+[2026-04-14T17:44:19.480] [DEBUG] debug-file - Update task entry:default@ProcessIntegratedHsp output file:D:\code\code\class\huawei\audio-volume-management\build\cache\default\integrated_hsp\integratedHspCache.json cache.
+[2026-04-14T17:44:19.480] [DEBUG] debug-file - Incremental task entry:default@ProcessIntegratedHsp post-execution cost:1 ms .
+[2026-04-14T17:44:19.481] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@MakePackInfo is up-to-date.
+[2026-04-14T17:44:19.481] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:D:\editor\Huawei\DevEco Studio\sdk\default\openharmony\toolchains\syscap_tool.exe cache by regenerate.
+[2026-04-14T17:44:19.481] [DEBUG] debug-file - Update task entry:default@SyscapTransform input file:D:\editor\Huawei\DevEco Studio\sdk\default\openharmony\ets\api\device-define cache by regenerate.
+[2026-04-14T17:44:19.486] [DEBUG] debug-file - Update task entry:default@SyscapTransform output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\syscap\default\rpcid.sc cache.
+[2026-04-14T17:44:19.487] [DEBUG] debug-file - Incremental task entry:default@SyscapTransform post-execution cost:7 ms .
+[2026-04-14T17:44:19.487] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessProfile is up-to-date.
+[2026-04-14T17:44:19.488] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessRouterMap is up-to-date.
+[2026-04-14T17:44:19.488] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessShareConfig is up-to-date.
+[2026-04-14T17:44:19.489] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-14T17:44:19.490] [DEBUG] debug-file - Update task entry:default@ProcessStartupConfig output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\startup\default\startup_config.json cache.
+[2026-04-14T17:44:19.491] [DEBUG] debug-file - Incremental task entry:default@ProcessStartupConfig post-execution cost:3 ms .
+[2026-04-14T17:44:19.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessResource is up-to-date.
+[2026-04-14T17:44:19.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@GenerateLoaderJson is up-to-date.
+[2026-04-14T17:44:19.491] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@ProcessLibs is up-to-date.
+[2026-04-14T17:44:19.494] [DEBUG] debug-file - Update task entry:default@CompileResource input file:D:\code\code\class\huawei\audio-volume-management\entry\src\main\resources cache from map.
+[2026-04-14T17:44:19.495] [DEBUG] debug-file - Update task entry:default@CompileResource input file:D:\code\code\class\huawei\audio-volume-management\AppScope\resources cache by regenerate.
+[2026-04-14T17:44:19.500] [DEBUG] debug-file - Update task entry:default@CompileResource input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\process_profile\default\module.json cache by regenerate.
+[2026-04-14T17:44:19.501] [DEBUG] debug-file - Update task entry:default@CompileResource input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\router_map\default\router_map.json cache by regenerate.
+[2026-04-14T17:44:19.502] [DEBUG] debug-file - Update task entry:default@CompileResource input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resConfig.json cache by regenerate.
+[2026-04-14T17:44:19.502] [DEBUG] debug-file - Update task entry:default@CompileResource output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default cache.
+[2026-04-14T17:44:19.527] [DEBUG] debug-file - Update task entry:default@CompileResource output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\generated\r\default\ResourceTable.h cache.
+[2026-04-14T17:44:19.528] [DEBUG] debug-file - Update task entry:default@CompileResource output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\generated\r\default cache.
+[2026-04-14T17:44:19.529] [DEBUG] debug-file - Incremental task entry:default@CompileResource post-execution cost:38 ms .
+[2026-04-14T17:44:19.529] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@DoNativeStrip is up-to-date.
+[2026-04-14T17:44:19.538] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader\default cache by regenerate.
+[2026-04-14T17:44:19.540] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resources\rawfile cache by regenerate.
+[2026-04-14T17:44:19.541] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\ResourceTable.txt cache from map.
+[2026-04-14T17:44:19.541] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-04-14T17:44:19.542] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-04-14T17:44:19.544] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\src\main\ets cache by regenerate.
+[2026-04-14T17:44:19.561] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-14T17:44:19.562] [DEBUG] debug-file - Update task entry:default@CompileArkTS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2026-04-14T17:44:19.563] [DEBUG] debug-file - Update task entry:default@CompileArkTS output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader_out\default\ets cache.
+[2026-04-14T17:44:19.565] [DEBUG] debug-file - Incremental task entry:default@CompileArkTS post-execution cost:36 ms .
+[2026-04-14T17:44:19.569] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader\default cache by regenerate.
+[2026-04-14T17:44:19.572] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resources\rawfile cache by regenerate.
+[2026-04-14T17:44:19.574] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\ResourceTable.txt cache by regenerate.
+[2026-04-14T17:44:19.575] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\ark_module.json cache by regenerate.
+[2026-04-14T17:44:19.576] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resources\base\profile cache by regenerate.
+[2026-04-14T17:44:19.578] [DEBUG] debug-file - Update task entry:default@BuildJS input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-14T17:44:19.579] [DEBUG] debug-file - Update task entry:default@BuildJS output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader_out\default\js cache.
+[2026-04-14T17:44:19.580] [DEBUG] debug-file - Incremental task entry:default@BuildJS post-execution cost:15 ms .
+[2026-04-14T17:44:19.580] [DEBUG] debug-file - There is no need to refresh cache, since the incremental task entry:default@CacheNativeLibs is up-to-date.
+[2026-04-14T17:44:19.581] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\module.json cache from map.
+[2026-04-14T17:44:19.581] [DEBUG] debug-file - Update task entry:default@GeneratePkgModuleJson output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\package\default\module.json cache.
+[2026-04-14T17:44:19.583] [DEBUG] debug-file - Incremental task entry:default@GeneratePkgModuleJson post-execution cost:2 ms .
+[2026-04-14T17:44:19.583] [DEBUG] debug-file - Incremental task entry:default@ProcessCompiledResources post-execution cost:1 ms .
+[2026-04-14T17:44:19.588] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\stripped_native_libs\default cache by regenerate.
+[2026-04-14T17:44:19.590] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\module.json cache from map.
+[2026-04-14T17:44:19.591] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resources cache by regenerate.
+[2026-04-14T17:44:19.605] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\res\default\resources.index cache by regenerate.
+[2026-04-14T17:44:19.606] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\pack.info cache by regenerate.
+[2026-04-14T17:44:19.607] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader_out\default\ets cache by regenerate.
+[2026-04-14T17:44:19.609] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader\default\pkgContextInfo.json cache by regenerate.
+[2026-04-14T17:44:19.610] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-04-14T17:44:19.611] [DEBUG] debug-file - Update task entry:default@PackageHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\generated\profile\default\BuildProfile.ets cache by regenerate.
+[2026-04-14T17:44:19.612] [DEBUG] debug-file - Update task entry:default@PackageHap output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\entry-default-unsigned.hap cache.
+[2026-04-14T17:44:19.613] [DEBUG] debug-file - Update task entry:default@PackageHap output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\source_map\default\sourceMaps.map cache.
+[2026-04-14T17:44:19.614] [DEBUG] debug-file - Update task entry:default@PackageHap output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\mapping\sourceMaps.map cache.
+[2026-04-14T17:44:19.614] [DEBUG] debug-file - Incremental task entry:default@PackageHap post-execution cost:30 ms .
+[2026-04-14T17:44:19.615] [DEBUG] debug-file - Update task entry:default@SignHap input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\entry-default-unsigned.hap cache from map.
+[2026-04-14T17:44:19.616] [DEBUG] debug-file - Update task entry:default@SignHap output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\entry-default-signed.hap cache.
+[2026-04-14T17:44:19.617] [DEBUG] debug-file - Incremental task entry:default@SignHap post-execution cost:3 ms .
+[2026-04-14T17:44:19.619] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\loader_out\default\ets\sourceMaps.map cache by regenerate.
+[2026-04-14T17:44:19.620] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol input file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\intermediates\libs\default cache by regenerate.
+[2026-04-14T17:44:19.621] [DEBUG] debug-file - Update task entry:default@CollectDebugSymbol output file:D:\code\code\class\huawei\audio-volume-management\entry\build\default\outputs\default\symbol cache.
+[2026-04-14T17:44:19.622] [DEBUG] debug-file - Incremental task entry:default@CollectDebugSymbol post-execution cost:5 ms .
+[2026-04-14T17:44:19.697] [DEBUG] debug-file - Cleanup worker 0.
+[2026-04-14T17:44:19.699] [DEBUG] debug-file - Worker 0 has been cleaned up.
+[2026-04-14T17:44:19.699] [DEBUG] debug-file - Current idle worker size: 2.
+[2026-04-14T17:44:19.699] [DEBUG] debug-file - Current resident worker size: 3.
+[2026-04-14T17:44:19.700] [DEBUG] debug-file - Cleanup worker 1.
+[2026-04-14T17:44:19.700] [DEBUG] debug-file - Worker 1 has been cleaned up.
+[2026-04-14T17:44:19.700] [DEBUG] debug-file - Current idle worker size: 1.
+[2026-04-14T17:44:19.700] [DEBUG] debug-file - Current resident worker size: 3.
+[2026-04-14T17:44:19.704] [DEBUG] debug-file - hvigor build process will be closed.
+[2026-04-14T17:44:19.711] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-04-14T17:44:19.714] [DEBUG] debug-file - session manager: send message to worker process.
+[2026-04-14T17:44:19.707] [DEBUG] debug-file - java daemon socket close code:1000 reason:close by user
+[2026-04-14T17:44:19.713] [DEBUG] debug-file - worker[0] exits with exit code 1.
+[2026-04-14T17:44:19.714] [DEBUG] debug-file - worker[1] exits with exit code 1.
+[2026-04-14T17:44:19.716] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-04-14T17:44:19.716] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-04-14T17:45:08.162] [DEBUG] debug-file - session manager: set active socket. socketId=TEZJ2Qj85AmHj6LZAAAD
+[2026-04-14T17:45:08.173] [DEBUG] debug-file - watch worker: worker id should be larger than 0. Nothing will be sent to any worker thread.
+[2026-04-14T17:45:08.179] [DEBUG] debug-file - Workers' log level updated to INFO
+[2026-04-14T17:45:08.184] [DEBUG] debug-file - Hvigor init with startParameters:{
+  hvigorfileTypeCheck: false,
+  parallelExecution: true,
+  incrementalExecution: true,
+  printStackTrace: false,
+  daemon: true,
+  analyze: 0,
+  logLevel: Level { level: 20000, levelStr: 'INFO', colour: 'green' },
+  optimizationStrategy: 'memory',
+  hotCompile: undefined,
+  hotReloadBuild: undefined,
+  customizedParam: undefined
+}

@@ -95,7 +95,7 @@ function VolumeSetting(parent = null) {
     (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
         Column.create();
         Column.padding({ left: 16, right: 16 });
-        Column.height(160);
+        Column.height(80);
         Column.width('100%');
     }, Column);
     {
@@ -128,41 +128,6 @@ function VolumeSetting(parent = null) {
             }
         }, { name: "VolumePanelView" });
     }
-    (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-        Divider.create();
-        Divider.backgroundColor('#F1F3F5');
-        Divider.width('100%');
-    }, Divider);
-    {
-        (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
-            if (isInitialRender) {
-                let componentCall = new VolumePanelView(parent ? parent : this, {
-                    text: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
-                    volumeVisible: true,
-                    volumeType: VolumeType.APPVOLUME,
-                    Percentage: 50
-                }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 72, col: 7 });
-                ViewPU.create(componentCall);
-                let paramsLambda = () => {
-                    return {
-                        text: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
-                        volumeVisible: true,
-                        volumeType: VolumeType.APPVOLUME,
-                        Percentage: 50
-                    };
-                };
-                componentCall.paramsGenerator_ = paramsLambda;
-            }
-            else {
-                (parent ? parent : this).updateStateVarsOfChildByElmtId(elmtId, {
-                    text: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
-                    volumeVisible: true,
-                    volumeType: VolumeType.APPVOLUME,
-                    Percentage: 50
-                });
-            }
-        }, { name: "VolumePanelView" });
-    }
     Column.pop();
     Column.pop();
 }
@@ -178,7 +143,7 @@ class Player extends ViewPU {
         this.__volume = this.createStorageLink('systemVolume', CommonConstants.INITIAL_VOLUME, "volume");
         this.__systemVolumeVisible = new ObservedPropertySimplePU(false, this, "systemVolumeVisible");
         this.__isDisabled = this.createStorageLink('isDisabled', false, "isDisabled");
-        this.__sheetHeight = new ObservedPropertySimplePU(372, this, "sheetHeight");
+        this.__sheetHeight = new ObservedPropertySimplePU(292, this, "sheetHeight");
         this.__isShow = new ObservedPropertySimplePU(false, this, "isShow");
         this.timer = 0;
         this.volumeUpCallBackFunc = () => {
@@ -400,7 +365,7 @@ class Player extends ViewPU {
                         if (isInitialRender) {
                             let componentCall = new 
                             // Do not display the system volume bar.
-                            SetVolume(this, { volume: this.volume }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 192, col: 9 });
+                            SetVolume(this, { volume: this.volume }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 183, col: 9 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -448,7 +413,7 @@ class Player extends ViewPU {
                             SystemVolumePanel(this, {
                                 volume: this.__volume,
                                 volumeVisible: this.__systemVolumeVisible
-                            }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 195, col: 11 });
+                            }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 186, col: 11 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -487,7 +452,7 @@ class Player extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new ControlAreaComponent(this, { songData: songDataList[0], imageColor: this.imageColor }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 232, col: 11 });
+                            let componentCall = new ControlAreaComponent(this, { songData: songDataList[0], imageColor: this.imageColor }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 223, col: 11 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {

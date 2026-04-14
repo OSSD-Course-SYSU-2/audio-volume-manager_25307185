@@ -25,10 +25,6 @@
 			"id":	"0x01000005"
 		}, {
 			"type":	"string",
-			"name":	"application_volume",
-			"id":	"0x01000006"
-		}, {
-			"type":	"string",
 			"name":	"audio_stream_volume",
 			"id":	"0x01000007"
 		}, {
@@ -63,10 +59,6 @@
 			"type":	"string",
 			"name":	"introduction_4",
 			"id":	"0x0100000F"
-		}, {
-			"type":	"string",
-			"name":	"introduction_5",
-			"id":	"0x01000010"
 		}, {
 			"type":	"string",
 			"name":	"module_desc",

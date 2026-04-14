@@ -40,7 +40,7 @@ export class VolumePanelView extends ViewPU {
             this.__volumeVisible.set(false);
         }
         if (params.volumeType === undefined) {
-            this.__volumeType.set(VolumeType.APPVOLUME);
+            this.__volumeType.set(VolumeType.AUDIOSTREAM);
         }
         if (params.text === undefined) {
             this.__text.set('');
@@ -119,18 +119,9 @@ export class VolumePanelView extends ViewPU {
     private audioRendererController: AudioRendererController | undefined;
     private audioVolumeController: AudioVolumeController;
     async aboutToAppear(): Promise<void> {
-        if (this.volumeType === VolumeType.APPVOLUME) {
-            this.audioVolumeController.creatVolumeManager();
-            this.audioVolumeController.appVolumeChange();
-            this.audioVolumeController.getAppVolumePercentage();
-            let appVolume: number = AppStorage.get('appVolume') ?? 50;
-            this.volume = Math.round(appVolume * 15 / 100);
-        }
-        else {
-            this.audioRendererController = AppStorage.get('audioRendererController');
-            let audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
-            this.volume = Math.round(audioStreamVolume * 15);
-        }
+        this.audioRendererController = AppStorage.get('audioRendererController');
+        let audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
+        this.volume = Math.round(audioStreamVolume * 15);
         this.Percentage = Math.floor(this.volume / 15 * 100);
     }
     aboutToDisappear(): void {
@@ -181,21 +172,12 @@ export class VolumePanelView extends ViewPU {
             Slider.trackThickness(20);
             Slider.selectedColor('#0A59F7');
             Slider.onChange((value: number) => {
-                if (this.volumeType === VolumeType.APPVOLUME) {
-                    this.volume = value;
-                    clearTimeout(this.timer);
-                    this.timer = setTimeout(() => {
-                        this.audioVolumeController.setAppVolumePercentage(value);
-                    }, 100);
-                }
-                else {
-                    this.volume = value;
-                    clearTimeout(this.timer);
-                    this.timer = setTimeout(() => {
-                        this.audioRendererController = AppStorage.get('audioRendererController');
-                        this.audioRendererController?.setVolume(value);
-                    }, 100);
-                }
+                this.volume = value;
+                clearTimeout(this.timer);
+                this.timer = setTimeout(() => {
+                    this.audioRendererController = AppStorage.get('audioRendererController');
+                    this.audioRendererController?.setVolume(value);
+                }, 100);
                 this.Percentage = Math.floor(this.volume / 15 * 100);
             });
         }, Slider);

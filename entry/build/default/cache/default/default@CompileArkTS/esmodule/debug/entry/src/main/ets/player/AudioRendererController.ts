@@ -134,9 +134,6 @@ export class AudioRendererController {
                 return;
             }
             // Set the volume.
-            this.audioVolumeController.getAppVolumePercentage();
-            let appVolume: number = AppStorage.get('appVolume') ?? 100;
-            this.audioVolumeController.setAppVolumePercentage(appVolume);
             let audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
             this.setVolume(audioStreamVolume * 15);
             // Starting the AudioRenderer.

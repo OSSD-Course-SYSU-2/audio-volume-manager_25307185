@@ -13,8 +13,7 @@ export enum AudioName {
     PCM = ".pcm"
 }
 export enum VolumeType {
-    APPVOLUME = 1,
-    AUDIOSTREAM = 2
+    AUDIOSTREAM = 1
 }
 export const imageList: ResourceStr[] = [
     { "id": 16777252, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },

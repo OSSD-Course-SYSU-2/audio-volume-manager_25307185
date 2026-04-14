@@ -177,7 +177,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets": {
-      "mtimeMs": 1776156592817.122,
+      "mtimeMs": 1776159345782.5105,
       "children": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\common\\CommonConstants.ets",
@@ -201,7 +201,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\viewModel\\PlayerViewModel.ets": {
-      "mtimeMs": 1776156592832.1863,
+      "mtimeMs": 1776159423592.8843,
       "children": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\model\\SongData.ets"
       ],
@@ -213,7 +213,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\common\\CommonConstants.ets": {
-      "mtimeMs": 1776156592812.0974,
+      "mtimeMs": 1776159453025.4988,
       "children": [],
       "parent": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
@@ -251,7 +251,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets": {
-      "mtimeMs": 1776158325465.631,
+      "mtimeMs": 1776159504365.8271,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.audio.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
@@ -269,7 +269,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets": {
-      "mtimeMs": 1776156592825.1008,
+      "mtimeMs": 1776159254375.1187,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.effectKit.d.ts",
@@ -1118,7 +1118,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioVolumeController.ets": {
-      "mtimeMs": 1776156592828.1018,
+      "mtimeMs": 1776159387341.711,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.audio.d.ts"
       ],
