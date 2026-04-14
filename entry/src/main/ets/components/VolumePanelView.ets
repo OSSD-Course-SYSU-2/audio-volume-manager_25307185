@@ -23,7 +23,7 @@ import { AudioVolumeController } from '../player/AudioVolumeController';
 export struct VolumePanelView {
   @State volume: number = CommonConstants.INITIAL_VOLUME;
   @Prop volumeVisible: boolean = false;
-  @Prop volumeType: number = VolumeType.APPVOLUME;
+  @Prop volumeType: number = VolumeType.AUDIOSTREAM;
   @Prop text: ResourceStr = '';
   @Prop Percentage: number = 0;
   private timer: number | undefined = undefined;
@@ -31,17 +31,9 @@ export struct VolumePanelView {
   private audioVolumeController: AudioVolumeController = new AudioVolumeController();
 
   async aboutToAppear(): Promise<void> {
-    if (this.volumeType === VolumeType.APPVOLUME) {
-      this.audioVolumeController.creatVolumeManager();
-      this.audioVolumeController.appVolumeChange();
-      this.audioVolumeController.getAppVolumePercentage();
-      let appVolume: number = AppStorage.get('appVolume') ?? 50;
-      this.volume = Math.round(appVolume * 15 / 100);
-    } else {
-      this.audioRendererController = AppStorage.get('audioRendererController');
-      let audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
-      this.volume = Math.round(audioStreamVolume * 15);
-    }
+    this.audioRendererController = AppStorage.get('audioRendererController');
+    let audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
+    this.volume = Math.round(audioStreamVolume * 15);
     this.Percentage = Math.floor(this.volume / 15 * 100);
   }
 
@@ -76,20 +68,12 @@ export struct VolumePanelView {
           .trackThickness(20)
           .selectedColor('#0A59F7')
           .onChange((value: number) => {
-            if (this.volumeType === VolumeType.APPVOLUME) {
-              this.volume = value;
-              clearTimeout(this.timer);
-              this.timer = setTimeout(() => {
-                this.audioVolumeController.setAppVolumePercentage(value);
-              }, 100);
-            } else {
-              this.volume = value;
-              clearTimeout(this.timer);
-              this.timer = setTimeout(() => {
-                this.audioRendererController = AppStorage.get('audioRendererController');
-                this.audioRendererController?.setVolume(value);
-              }, 100);
-            }
+            this.volume = value;
+            clearTimeout(this.timer);
+            this.timer = setTimeout(() => {
+              this.audioRendererController = AppStorage.get('audioRendererController');
+              this.audioRendererController?.setVolume(value);
+            }, 100);
             this.Percentage = Math.floor(this.volume / 15 * 100);
           })
       }

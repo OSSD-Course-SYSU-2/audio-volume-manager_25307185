@@ -31,8 +31,7 @@ export enum AudioName {
 }
 
 export enum VolumeType {
-  APPVOLUME = 1,
-  AUDIOSTREAM = 2
+  AUDIOSTREAM = 1
 }
 
 export const imageList: ResourceStr[] = [
