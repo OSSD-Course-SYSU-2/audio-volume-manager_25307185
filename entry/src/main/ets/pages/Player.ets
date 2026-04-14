@@ -66,18 +66,9 @@ function VolumeSetting() {
         volumeType: VolumeType.AUDIOSTREAM,
         Percentage: 50
       })
-      Divider()
-        .backgroundColor('#F1F3F5')
-        .width('100%')
-      VolumePanelView({
-        text: $r('app.string.application_volume'),
-        volumeVisible: true,
-        volumeType: VolumeType.APPVOLUME,
-        Percentage: 50
-      })
     }
     .padding({ left: 16, right: 16 })
-    .height(160)
+    .height(80)
     .width('100%')
   }
   .backgroundColor('#FFFFFF')
@@ -98,7 +89,7 @@ struct Player {
   @StorageLink('systemVolume') volume: number = CommonConstants.INITIAL_VOLUME;
   @State systemVolumeVisible: boolean = false;
   @StorageLink('isDisabled') isDisabled: boolean = false;
-  @State sheetHeight: number = 372;
+  @State sheetHeight: number = 292;
   @State isShow: boolean = false;
   private timer: number | undefined = 0;
   private volumeUpCallBackFunc: (event: KeyEvent) => void = () => {
