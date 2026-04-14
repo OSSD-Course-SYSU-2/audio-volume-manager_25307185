@@ -21,10 +21,6 @@
       "value": "音频流音量"
     },
     {
-      "name": "application_volume",
-      "value": "应用音量"
-    },
-    {
       "name": "introduction",
       "value": "本Sample实现音量管理功能，包括："
     },
@@ -38,15 +34,11 @@
     },
     {
       "name": "introduction_3",
-      "value": "3、通过滑动条调节应用音量。"
+      "value": "3、通过滑动条调节音频流音量。"
     },
     {
       "name": "introduction_4",
-      "value": "4、通过滑动条调节音频流音量。"
-    },
-    {
-      "name": "introduction_5",
-      "value": "5、通过开关屏蔽音量按键。"
+      "value": "4、通过开关屏蔽音量按键。"
     },
     {
       "name": "playback_page",

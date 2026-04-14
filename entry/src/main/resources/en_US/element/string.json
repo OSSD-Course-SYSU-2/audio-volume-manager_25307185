@@ -21,10 +21,6 @@
       "value": "Audio stream volume"
     },
     {
-      "name": "application_volume",
-      "value": "Application volume"
-    },
-    {
       "name": "introduction",
       "value": "This Sample implements the volume management function, including:"
     },
@@ -38,15 +34,11 @@
     },
     {
       "name": "introduction_3",
-      "value": "3.Adjust the application volume by sliding the slider."
+      "value": "3.Adjust the volume of the audio stream by sliding the slider."
     },
     {
       "name": "introduction_4",
-      "value": "4.Adjust the volume of the audio stream by sliding the slider."
-    },
-    {
-      "name": "introduction_5",
-      "value": "5.Disable the volume button through the switch."
+      "value": "4.Disable the volume button through the switch."
     },
     {
       "name": "playback_page",

@@ -20,11 +20,6 @@ export class CommonConstants {
   static readonly INITIAL_VOLUME: number = 5;
 
   /**
-   * Initial volume.
-   */
-  static readonly APP_INITIAL_VOLUME: number = 15;
-
-  /**
    * Mix volume.
    */
   static readonly MIX_VOLUME: number = 1;
