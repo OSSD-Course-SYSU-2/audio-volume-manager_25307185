@@ -4,6 +4,7 @@ import UIAbility from "@ohos:app.ability.UIAbility";
 import type Want from "@ohos:app.ability.Want";
 import hilog from "@ohos:hilog";
 import type window from "@ohos:window";
+import { CommonConstants } from "@normalized:N&&&entry/src/main/ets/common/CommonConstants&";
 import { Logger } from "@normalized:N&&&entry/src/main/ets/utils/Logger&";
 const DOMAIN = 0x0000;
 export default class EntryAbility extends UIAbility {
@@ -14,6 +15,10 @@ export default class EntryAbility extends UIAbility {
         catch (err) {
             hilog.error(DOMAIN, 'testTag', 'Failed to set colorMode. Cause: %{public}s', JSON.stringify(err));
         }
+        // Initialize AppStorage values for auto-balance volume feature
+        // Note: AppStorage is globally available in ArkTS
+        AppStorage.setOrCreate('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED);
+        AppStorage.setOrCreate('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO);
         hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');
     }
     onDestroy(): void {

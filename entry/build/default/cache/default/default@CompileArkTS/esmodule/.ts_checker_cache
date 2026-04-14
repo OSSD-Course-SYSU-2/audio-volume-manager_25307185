@@ -272,7 +272,8 @@
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\AVVolumePanelView.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\SystemVolumePanelView.ets",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
       ],
       "error": false
     },
@@ -2593,7 +2594,7 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets": {
-      "mtimeMs": 1776156592818.156,
+      "mtimeMs": 1776172527032.7124,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.AbilityConstant.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.ConfigurationConstant.d.ts",
@@ -2601,6 +2602,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.hilog.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\common\\CommonConstants.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\utils\\Logger.ets"
       ],
       "parent": [],
@@ -3266,7 +3268,8 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
       ],
       "error": false
     },
@@ -4069,7 +4072,8 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.contextConstant.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
       ],
       "error": false
     },

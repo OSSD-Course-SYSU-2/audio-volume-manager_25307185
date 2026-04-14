@@ -16,6 +16,7 @@
 import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
+import { CommonConstants } from '../common/CommonConstants';
 import { Logger } from '../utils/Logger';
 
 const DOMAIN = 0x0000;
@@ -27,6 +28,12 @@ export default class EntryAbility extends UIAbility {
     } catch (err) {
       hilog.error(DOMAIN, 'testTag', 'Failed to set colorMode. Cause: %{public}s', JSON.stringify(err));
     }
+    
+    // Initialize AppStorage values for auto-balance volume feature
+    // Note: AppStorage is globally available in ArkTS
+    AppStorage.setOrCreate('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED);
+    AppStorage.setOrCreate('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO);
+    
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');
   }
 
