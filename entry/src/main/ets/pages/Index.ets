@@ -23,7 +23,8 @@ struct Index {
     'app.string.introduction_2',
     'app.string.introduction_3',
     'app.string.introduction_4',
-    'app.string.introduction_5'
+    'app.string.introduction_5',
+    'app.string.introduction_6'
   ];
 
   @Builder

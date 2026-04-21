@@ -51,45 +51,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cryptoFramework.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.appAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.distributedAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.osAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pasteboard.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.power.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.scan.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.runningLock.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.screenLock.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.settings.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.systemDateTime.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.systemTime.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.thermal.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usbManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wallpaper.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.zlib.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscriber.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.resourceschedule.systemload.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.displaySync.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputDevice.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceNavigation.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FormMenu.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceWeb.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.PiPWindow.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.floatingBall.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pluginComponent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.prompt.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FoldSplitContainer.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.uiExtension.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FullScreenLaunchComponent.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.MultiNavigation.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.HalfScreenLaunchComponent.d.ets"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts"
       ],
       "error": false
     },
@@ -100,8 +62,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts"
       ],
       "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
       ],
       "error": false
     },
@@ -129,14 +90,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.bundle.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\PhotoEditorExtensionContext.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pasteboard.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wallpaper.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ImageKit.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.videoProcessingEngine.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.floatingBall.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.screenshot.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts"
       ],
       "error": false
     },
@@ -147,8 +101,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyEvent.d.ts"
       ],
       "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
       ],
       "error": false
     },
@@ -160,8 +113,7 @@
       ],
       "parent": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputConsumer.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputConsumer.d.ts"
       ],
       "error": false
     },
@@ -170,10 +122,7 @@
       "children": [],
       "parent": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputDevice.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.mouseEvent.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyEvent.d.ts"
       ],
       "error": false
     },
@@ -252,27 +201,29 @@
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\viewModel\\PlayerViewModel.ets": {
-      "mtimeMs": 1776160104509.5835,
+      "mtimeMs": 1776761914580.26,
       "children": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\model\\SongData.ets"
       ],
       "parent": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\ControlAreaComponent.ets",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\EQPage.ets"
       ],
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\common\\CommonConstants.ets": {
-      "mtimeMs": 1776160093436.9458,
+      "mtimeMs": 1776761962724.0415,
       "children": [],
       "parent": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\ControlAreaComponent.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\AVVolumePanelView.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\SystemVolumePanelView.ets",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\EQPage.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
       ],
       "error": false
@@ -299,15 +250,12 @@
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\folder_stack.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\nav_destination.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\navigation.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FoldSplitContainer.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.uiExtension.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\navigation.d.ts"
       ],
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets": {
-      "mtimeMs": 1776160216496.5518,
+      "mtimeMs": 1776781762153.05,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.audio.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
@@ -321,12 +269,25 @@
       "parent": [
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\ControlAreaComponent.ets",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\VolumePanelView.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\EQPage.ets"
+      ],
+      "error": false
+    },
+    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts": {
+      "mtimeMs": 1774582692000,
+      "children": [
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
+      ],
+      "parent": [
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\EQPage.ets"
       ],
       "error": false
     },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets": {
-      "mtimeMs": 1776163143894.2412,
+      "mtimeMs": 1776781824342.318,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.effectKit.d.ts",
@@ -343,21 +304,21 @@
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\viewModel\\PlayerViewModel.ets",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\common\\CommonConstants.ets",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets",
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts"
       ],
       "parent": [],
-      "error": false
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
     },
     "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.colorSpaceManager.d.ts": {
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.drawing.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.sendableColorSpaceManager.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.drawing.d.ts"
       ],
       "error": false
     },
@@ -384,9 +345,7 @@
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\ability\\connectOptions.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.appAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.UIAbility.d.ts"
       ],
       "error": false
     },
@@ -418,8 +377,7 @@
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.resourceManager.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\tab_content.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\tab_content.d.ts"
       ],
       "error": false
     },
@@ -427,10 +385,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.mouseEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.touchEvent.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyEvent.d.ts"
       ],
       "error": false
     },
@@ -525,15 +480,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\UIPickerComponentModifier.d.ts"
       ],
       "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\ControlAreaComponent.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeader.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Chip.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ChipGroup.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBarV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeaderV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SegmentButtonV2.d.ets"
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\components\\ControlAreaComponent.ets"
       ],
       "error": false
     },
@@ -1224,8 +1171,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.stream.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.util.stream.d.ts"
       ],
       "error": false
     },
@@ -1351,10 +1297,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\app\\context.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.rdb.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.PiPWindow.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.floatingBall.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.rdb.d.ts"
       ],
       "error": false
     },
@@ -1376,8 +1319,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\ExtensionContext.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\AbilityStageContext.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.settings.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts"
       ],
       "error": false
     },
@@ -1455,8 +1397,7 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.ability.featureAbility.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.settings.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.ability.featureAbility.d.ts"
       ],
       "error": false
     },
@@ -1617,9 +1558,7 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\UIAbilityContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\UIExtensionContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FullScreenLaunchComponent.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.HalfScreenLaunchComponent.d.ets"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\UIExtensionContext.d.ts"
       ],
       "error": false
     },
@@ -1698,17 +1637,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.bundle.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\AppServiceExtensionContext.d.ts",
         "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\embedded_component.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.appAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.PrintExtensionAbility.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pasteboard.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\triggerInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FormMenu.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.floatingBall.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pluginComponent.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\embedded_component.d.ts"
       ],
       "error": false
     },
@@ -1950,9 +1879,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\ComponentContent.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\NodeController.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\XComponentNode.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.InterstitialDialogAction.d.ets"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -1979,13 +1906,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\content_slot.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\node_container.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ArcButton.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ProgressButtonV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBarV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SegmentButtonV2.d.ets"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\node_container.d.ts"
       ],
       "error": false
     },
@@ -1993,8 +1914,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2004,8 +1924,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2015,8 +1934,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2030,19 +1948,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\action_sheet.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\alert_dialog.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\custom_dialog_controller.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\custom_dialog_controller.d.ts"
       ],
       "error": false
     },
@@ -2050,8 +1956,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2059,8 +1964,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2073,8 +1977,7 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2082,8 +1985,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2094,8 +1996,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
       ],
       "error": false
     },
@@ -2107,8 +2008,7 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2120,8 +2020,7 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2147,8 +2046,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\Graphics.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.PiPWindow.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts"
       ],
       "error": false
     },
@@ -2168,8 +2066,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\NodeController.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\XComponentNode.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\NodeContent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\canvas.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.PiPWindow.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\canvas.d.ts"
       ],
       "error": false
     },
@@ -2262,8 +2159,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\Graphics.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\canvas.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.text.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.text.d.ts"
       ],
       "error": false
     },
@@ -2273,8 +2169,7 @@
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\Graphics.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.drawing.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.text.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.text.d.ts"
       ],
       "error": false
     },
@@ -2301,8 +2196,7 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.dragController.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pasteboard.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2319,8 +2213,7 @@
       "children": [],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.StartOptions.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.StateManagement.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts"
       ],
       "error": false
     },
@@ -2593,8 +2486,22 @@
       ],
       "error": false
     },
+    "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\EQPage.ets": {
+      "mtimeMs": 1776784536226.1848,
+      "children": [
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\common\\CommonConstants.ets",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\viewModel\\PlayerViewModel.ets",
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
+        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\player\\AudioRendererController.ets"
+      ],
+      "parent": [],
+      "error": true,
+      "errorCodes": [
+        28007
+      ]
+    },
     "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets": {
-      "mtimeMs": 1776172527032.7124,
+      "mtimeMs": 1776762472239.5432,
       "children": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.AbilityConstant.d.ts",
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.ConfigurationConstant.d.ts",
@@ -2676,8 +2583,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2685,8 +2591,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2695,8 +2600,7 @@
       "children": [],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\image.d.ts"
       ],
       "error": false
     },
@@ -2704,8 +2608,7 @@
       "mtimeMs": 1774582692000,
       "children": [],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts"
       ],
       "error": false
     },
@@ -2714,9 +2617,7 @@
       "children": [],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\with_theme.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Dialog.d.ets"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\with_theme.d.ts"
       ],
       "error": false
     },
@@ -2954,8 +2855,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.common2D.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\text_common.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\build-tools\\ets-loader\\declarations\\text_common.d.ts"
       ],
       "error": false
     },
@@ -3065,8 +2965,7 @@
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts"
       ],
       "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
+        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.web.webview.d.ts"
       ],
       "error": false
     },
@@ -3085,1280 +2984,6 @@
       ],
       "parent": [
         "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.security.cert.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.appAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.customization.customConfig.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.distributedAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.osAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.PrintExtensionAbility.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.batteryInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.deviceAttest.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.deviceInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pasteboard.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.power.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.print.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.scan.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.cacheDownload.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.runningLock.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.screenLock.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.settings.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.systemDateTime.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.systemTime.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.thermal.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usb.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usbManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usbManager.serial.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wallpaper.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.zlib.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.events.emitter.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.battery.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.brightness.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.device.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.request.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.resourceschedule.systemload.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.annotation.d.ets"
-      ],
-      "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.effectKit.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.colorSpaceManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.sendableColorSpaceManager.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.hdrCapability.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.displaySync.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.common2D.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.drawing.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.text.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.uiEffect.d.ts"
-      ],
-      "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ImageKit.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.videoProcessingEngine.d.ts"
-      ],
-      "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.gestureEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.infraredEmitter.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputConsumer.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputDevice.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputDeviceCooperate.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.intentionCode.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyCode.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.mouseEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.pointer.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.touchEvent.d.ts"
-      ],
-      "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.animator.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceNavigation.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceSearch.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ArcButton.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Chip.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.NavPushPathHelper.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ChipGroup.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ComposeListItem.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ComposeTitleBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Counter.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Dialog.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.DialogV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.EditableTitleBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ExceptionPrompt.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Filter.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FormMenu.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.GridObjectSortComponent.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Popup.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ProgressButton.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ProgressButtonV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SegmentButton.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SelectionMenu.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SelectTitleBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SplitLayout.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeader.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SwipeRefresher.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.TabTitleBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBar.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBarV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.TreeView.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.InterstitialDialogAction.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.componentSnapshot.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.componentUtils.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.dragController.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.drawableDescriptor.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.inspector.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.observer.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.StateManagement.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.shape.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.curves.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceWeb.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.font.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.matrix4.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.measure.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.mediaquery.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.PiPWindow.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.floatingBall.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pluginComponent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.prompt.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.promptAction.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.router.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.screenshot.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.uiAppearance.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.app.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.configuration.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.mediaquery.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.prompt.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.router.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcList.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcAlphabetIndexer.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcScrollBar.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.theme.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FoldSplitContainer.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.uiExtension.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FullScreenLaunchComponent.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceTabs.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.Prefetcher.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.DownloadFileButton.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.MultiNavigation.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ArcSlider.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcSwiper.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeaderV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SegmentButtonV2.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.HalfScreenLaunchComponent.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
-      ],
-      "parent": [
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\pages\\Player.ets",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.appAccount.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.rpc.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.customization.customConfig.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.distributedAccount.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.osAccount.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.osAccount.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.account.distributedAccount.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.PrintExtensionAbility.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.batteryInfo.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.deviceAttest.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.deviceInfo.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pasteboard.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.data.unifiedDataChannel.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.power.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.scan.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\BaseContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.cacheDownload.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.runningLock.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.screenLock.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.settings.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\ability\\dataAbilityHelper.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\Context.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.systemDateTime.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.systemTime.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.thermal.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usb.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usbManager.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.usbManager.serial.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wallpaper.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.zlib.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventData.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscriber.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscribeInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventPublishData.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.battery.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.brightness.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.device.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.request.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.resourceschedule.systemload.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.annotation.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.BasicServicesKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\triggerInfo.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.request.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wantAgent.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\triggerInfo.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.wantAgent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wantAgent.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.wantAgent.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\triggerInfo.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\wantAgent\\wantAgentInfo.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventData.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscriber.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscribeInfo.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscribeInfo.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventSubscriber.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\commonEvent\\commonEventPublishData.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.commonEventManager.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.sendableColorSpaceManager.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.lang.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.collections.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.colorSpaceManager.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.hdrCapability.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.displaySync.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkGraphics2D.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.lang.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.sendableColorSpaceManager.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.collections.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.collections.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.lang.d.ets"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.sendableColorSpaceManager.d.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.sendableImage.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.colorSpaceManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.rpc.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\arkts\\@arkts.lang.d.ets"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ImageKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.videoProcessingEngine.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ImageKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.gestureEvent.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.infraredEmitter.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputDevice.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyCode.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputDeviceCooperate.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.mouseEvent.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputEvent.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.keyCode.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.touchEvent.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimodalInput.inputEvent.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.InputKit.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceNavigation.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceSearch.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeader.d.ets"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ArcButton.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Chip.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ChipGroup.d.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.NavPushPathHelper.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ChipGroup.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Chip.d.ets",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ComposeListItem.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ComposeTitleBar.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Counter.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Dialog.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.theme.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.DialogV2.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.EditableTitleBar.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ExceptionPrompt.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Filter.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FormMenu.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.form.formBindingData.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.GridObjectSortComponent.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.Popup.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ProgressButton.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ProgressButtonV2.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SegmentButton.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SelectionMenu.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SelectTitleBar.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SplitLayout.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeader.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceSearch.d.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SwipeRefresher.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.TabTitleBar.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBar.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ToolBarV2.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.TreeView.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.InterstitialDialogAction.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.UIContext.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.StateManagement.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.contextConstant.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\code\\code\\class\\huawei\\audio-volume-management\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.curves.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceWeb.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.colorSpaceManager.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.graphics.hdrCapability.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FoldSplitContainer.d.ets"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.PiPWindow.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\BaseContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\NodeController.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\arkui\\FrameNode.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.floatingBall.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\application\\BaseContext.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.pluginComponent.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.Want.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.prompt.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.screenshot.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.multimedia.image.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.uiAppearance.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.app.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.configuration.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.mediaquery.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.prompt.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@system.router.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcList.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcAlphabetIndexer.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcScrollBar.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FoldSplitContainer.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.display.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.uiExtension.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.window.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FullScreenLaunchComponent.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.AtomicServiceOptions.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.AtomicServiceTabs.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.Prefetcher.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.DownloadFileButton.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.MultiNavigation.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.ArcSlider.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.ArcSwiper.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SubHeaderV2.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.SegmentButtonV2.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.modifier.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.node.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.atomicservice.HalfScreenLaunchComponent.d.ets": {
-      "mtimeMs": 1774582692000,
-      "children": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.ability.AtomicServiceOptions.d.ts",
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.base.d.ts"
-      ],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\kits\\@kit.ArkUI.d.ts"
-      ],
-      "error": false
-    },
-    "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.app.form.formBindingData.d.ts": {
-      "mtimeMs": 1774582692000,
-      "children": [],
-      "parent": [
-        "D:\\editor\\Huawei\\DevEco Studio\\sdk\\default\\openharmony\\ets\\api\\@ohos.arkui.advanced.FormMenu.d.ets"
       ],
       "error": false
     }

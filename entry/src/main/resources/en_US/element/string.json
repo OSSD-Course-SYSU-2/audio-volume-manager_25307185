@@ -87,6 +87,66 @@
     {
       "name": "auto_balance_description",
       "value": "Auto balance volume function smooths audio volume to avoid sudden changes. Higher compression strength results in less volume variation."
+    },
+    {
+      "name": "eq_settings",
+      "value": "EQ Settings"
+    },
+    {
+      "name": "eq_enable",
+      "value": "Enable EQ"
+    },
+    {
+      "name": "eq_preset",
+      "value": "EQ Preset"
+    },
+    {
+      "name": "eq_preset_flat",
+      "value": "Flat"
+    },
+    {
+      "name": "eq_preset_rock",
+      "value": "Rock"
+    },
+    {
+      "name": "eq_preset_pop",
+      "value": "Pop"
+    },
+    {
+      "name": "eq_preset_jazz",
+      "value": "Jazz"
+    },
+    {
+      "name": "eq_preset_classical",
+      "value": "Classical"
+    },
+    {
+      "name": "eq_preset_custom",
+      "value": "Custom"
+    },
+    {
+      "name": "eq_reset",
+      "value": "Reset to Flat"
+    },
+    {
+      "name": "eq_description",
+      "value": "Adjust the equalizer to enhance audio quality. Each band controls a specific frequency range."
+    },
+    {
+      "name": "eq_gain",
+      "value": "Gain"
+    },
+    {
+      "name": "eq_db",
+      "value": "dB"
+    },
+    {
+      "name": "done",
+      "value": "Done"
+    },
+    {
+      "name": "enable_eq",
+      "value": "Enable EQ"
     }
   ]
 }

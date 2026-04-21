@@ -28,6 +28,7 @@ import { songDataList, VolumeType } from '../viewModel/PlayerViewModel';
 import { CommonConstants } from '../common/CommonConstants';
 import { window } from '@kit.ArkUI';
 import { AudioRendererController } from '../player/AudioRendererController';
+import router from '@ohos.router';
 
 @Builder
 export function PlayerBuilder(name: string, param: Object) {
@@ -47,6 +48,9 @@ struct Player {
   @StorageLink('isDisabled') isDisabled: boolean = false;
   @StorageLink('autoBalanceEnabled') autoBalanceEnabled: boolean = CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED;
   @StorageLink('compressionRatio') compressionRatio: number = CommonConstants.DEFAULT_COMPRESSION_RATIO;
+  @StorageLink('eqEnabled') @Watch('onEQEnabledChange') eqEnabled: boolean = CommonConstants.DEFAULT_EQ_ENABLED;
+  @StorageLink('eqMode') @Watch('onEQModeChange') eqMode: number = CommonConstants.DEFAULT_EQ_MODE;
+  @StorageLink('eqBands') @Watch('onEQBandsChange') eqBands: number[] = CommonConstants.DEFAULT_EQ_PRESET;
   @State sheetHeight: number = 340;
   @State isShow: boolean = false;
   @Builder volumeSettingBuilder() {
@@ -65,6 +69,17 @@ struct Player {
     this.getImageColor();
     this.keyIntercept();
     this.audioRendererController = AppStorage.get('audioRendererController');
+    
+    // Log initial EQ settings
+    Logger.info('Player', `Initial EQ settings - Enabled: ${this.eqEnabled}, Mode: ${this.eqMode}, Bands: ${JSON.stringify(this.eqBands)}`);
+    Logger.info('Player', `EQ change listeners registered for Player component`);
+    
+    // Test EQ re-application on startup
+    if (this.audioRendererController) {
+      Logger.info('Player', 'Testing EQ re-application on startup');
+      this.reapplyEQSettings();
+    }
+    
     let systemBarProperties: window.SystemBarProperties = {
       statusBarContentColor: '#ffffff',
       statusBarColor: this.imageColor
@@ -332,6 +347,35 @@ struct Player {
         Logger.error(`getMediaContent error: ${error.code}, message: ${error.message}`);
       })
   }
+
+  // Called when EQ enabled state changes
+  onEQEnabledChange(): void {
+    Logger.info('Player', `EQ enabled changed to: ${this.eqEnabled}`);
+    this.reapplyEQSettings();
+  }
+
+  // Called when EQ mode changes
+  onEQModeChange(): void {
+    Logger.info('Player', `EQ mode changed to: ${this.eqMode}`);
+    this.reapplyEQSettings();
+  }
+
+  // Called when EQ bands change
+  onEQBandsChange(): void {
+    Logger.info('Player', `EQ bands changed: ${JSON.stringify(this.eqBands)}`);
+    this.reapplyEQSettings();
+  }
+
+  // Re-apply EQ settings to audio renderer
+  private reapplyEQSettings(): void {
+    if (this.audioRendererController) {
+      Logger.info('Player', 'Re-applying EQ settings to audio renderer');
+      this.audioRendererController.reapplyEQ();
+      Logger.info('Player', `EQ settings changed - Enabled: ${this.eqEnabled}, Mode: ${this.eqMode}, Bands: ${JSON.stringify(this.eqBands)}`);
+    } else {
+      Logger.warn('Player', 'audioRendererController is undefined, cannot reapply EQ settings');
+    }
+  }
 }
 
 @Component
@@ -339,6 +383,9 @@ struct VolumeSettingComponent {
   @StorageLink('autoBalanceEnabled') autoBalanceEnabled: boolean = CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED;
   @StorageLink('compressionRatio') compressionRatio: number = CommonConstants.DEFAULT_COMPRESSION_RATIO;
   @StorageLink('isDisabled') isDisabled: boolean = false;
+  @StorageLink('eqEnabled') eqEnabled: boolean = CommonConstants.DEFAULT_EQ_ENABLED;
+  @StorageLink('eqMode') eqMode: number = CommonConstants.DEFAULT_EQ_MODE;
+  @StorageLink('eqBands') eqBands: number[] = CommonConstants.DEFAULT_EQ_PRESET;
 
   build() {
     Column() {
@@ -385,7 +432,6 @@ struct VolumeSettingComponent {
           Text($r('app.string.auto_balance'))
             .fontSize(16)
             .fontColor('#182431')
-            .fontWeight(FontWeight.Medium)
           Toggle({ type: ToggleType.Switch, isOn: this.autoBalanceEnabled })
             .onChange((isOn: boolean) => {
               this.autoBalanceEnabled = isOn;
@@ -450,13 +496,49 @@ struct VolumeSettingComponent {
       }
       .padding({ left: 16, right: 16 })
       .width('100%')
+
+      Divider()
+        .backgroundColor('#F1F3F5')
+        .padding({ left: 16, right: 16 })
+        .width('100%')
+
+      // EQ Settings
+      Column() {
+        // EQ Settings Button
+        Button('EQ Settings', { type: ButtonType.Normal })
+          .width('100%')
+          .height(48)
+          .backgroundColor('#F0F7FF')
+          .fontColor('#0A59F7')
+          .onClick(() => {
+            // Navigate to EQ page
+            router.pushUrl({
+              url: 'pages/EQPage'
+            })
+          })
+          .margin({ bottom: 12 })
+      }
+      .padding({ left: 16, right: 16 })
+      .width('100%')
     }
     .backgroundColor('#FFFFFF')
     .width('100%')
-    .height(400)
+    .height(500)
     .padding({
       top: 12,
       bottom: 16
     })
+  }
+
+  private getEQPresetName(): string {
+    switch (this.eqMode) {
+      case 0: return 'Flat';
+      case 1: return 'Rock';
+      case 2: return 'Pop';
+      case 3: return 'Jazz';
+      case 4: return 'Classical';
+      case 5: return 'Custom';
+      default: return 'Flat';
+    }
   }
 }

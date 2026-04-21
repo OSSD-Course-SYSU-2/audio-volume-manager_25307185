@@ -223,7 +223,7 @@ export class ControlAreaComponent extends ViewPU {
                 value: this.value
             });
             Slider.selectedColor('#DBFFFFFF');
-            Slider.trackColor({ "id": 16777241, "type": 10001, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Slider.trackColor({ "id": 16777256, "type": 10001, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Slider.onChange((value: number, mode: SliderChangeMode) => {
                 if (mode === SliderChangeMode.End || mode === SliderChangeMode.Begin) {
                     this.audioRendererController.seek(value);
@@ -239,7 +239,7 @@ export class ControlAreaComponent extends ViewPU {
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(this.currentTime);
-            Text.fontColor({ "id": 16777242, "type": 10001, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777257, "type": 10001, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Text.fontSize(10);
             Text.fontFamily('HarmonyHeiTi');
             Text.lineHeight(14);
@@ -247,7 +247,7 @@ export class ControlAreaComponent extends ViewPU {
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Text.create(this.totalTime);
-            Text.fontColor({ "id": 16777242, "type": 10001, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777257, "type": 10001, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Text.fontSize(10);
             Text.fontFamily('HarmonyHeiTi');
             Text.lineHeight(14);
@@ -265,11 +265,11 @@ export class ControlAreaComponent extends ViewPU {
             });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777249, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Image.create({ "id": 16777264, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             __Image__controlImageBuilder();
             Image.width(32);
             Image.onClick(() => {
-                this.getUIContext().getPromptAction().openToast({ message: { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }).catch(() => {
+                this.getUIContext().getPromptAction().openToast({ message: { "id": 16777252, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }).catch(() => {
                     Logger.error('openToast error');
                 });
             });
@@ -288,11 +288,11 @@ export class ControlAreaComponent extends ViewPU {
             });
         }, Image);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777250, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Image.create({ "id": 16777265, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             __Image__controlImageBuilder();
             Image.width(32);
             Image.onClick(() => {
-                this.getUIContext().getPromptAction().openToast({ message: { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }).catch(() => {
+                this.getUIContext().getPromptAction().openToast({ message: { "id": 16777252, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }).catch(() => {
                     Logger.error('openToast error');
                 });
             });

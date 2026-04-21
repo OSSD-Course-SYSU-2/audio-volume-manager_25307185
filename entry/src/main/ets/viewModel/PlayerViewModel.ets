@@ -39,6 +39,27 @@ export enum AutoBalanceMode {
   ON = 1
 }
 
+export enum EQMode {
+  FLAT = 0,
+  ROCK = 1,
+  POP = 2,
+  JAZZ = 3,
+  CLASSICAL = 4,
+  CUSTOM = 5
+}
+
+export interface EQBand {
+  frequency: number;  // 频段频率，单位Hz
+  label: string;      // 频段标签
+  gain: number;       // 增益值，范围-12到12 dB
+}
+
+export interface EQPreset {
+  name: string;       // 预设名称
+  mode: EQMode;       // 预设模式
+  bands: number[];    // 各频段增益值数组，长度10
+}
+
 export const imageList: ResourceStr[] = [
   $r('app.media.ic_public_play'),
   $r('app.media.ic_public_pause')

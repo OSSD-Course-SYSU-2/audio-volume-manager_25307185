@@ -5,6 +5,9 @@ interface VolumeSettingComponent_Params {
     autoBalanceEnabled?: boolean;
     compressionRatio?: number;
     isDisabled?: boolean;
+    eqEnabled?: boolean;
+    eqMode?: number;
+    eqBands?: number[];
 }
 interface Player_Params {
     imageColor?: string;
@@ -15,6 +18,9 @@ interface Player_Params {
     isDisabled?: boolean;
     autoBalanceEnabled?: boolean;
     compressionRatio?: number;
+    eqEnabled?: boolean;
+    eqMode?: number;
+    eqBands?: number[];
     sheetHeight?: number;
     isShow?: boolean;
     timer?: number | undefined;
@@ -40,11 +46,12 @@ import { songDataList, VolumeType } from "@normalized:N&&&entry/src/main/ets/vie
 import { CommonConstants } from "@normalized:N&&&entry/src/main/ets/common/CommonConstants&";
 import type window from "@ohos:window";
 import type { AudioRendererController } from '../player/AudioRendererController';
+import router from "@ohos:router";
 export function PlayerBuilder(name: string, param: Object, parent = null) {
     {
         (parent ? parent : this).observeComponentCreation2((elmtId, isInitialRender) => {
             if (isInitialRender) {
-                let componentCall = new Player(parent ? parent : this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 34, col: 3 });
+                let componentCall = new Player(parent ? parent : this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 35, col: 3 });
                 ViewPU.create(componentCall);
                 let paramsLambda = () => {
                     return {};
@@ -71,6 +78,9 @@ class Player extends ViewPU {
         this.__isDisabled = this.createStorageLink('isDisabled', false, "isDisabled");
         this.__autoBalanceEnabled = this.createStorageLink('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED, "autoBalanceEnabled");
         this.__compressionRatio = this.createStorageLink('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO, "compressionRatio");
+        this.__eqEnabled = this.createStorageLink('eqEnabled', CommonConstants.DEFAULT_EQ_ENABLED, "eqEnabled");
+        this.__eqMode = this.createStorageLink('eqMode', CommonConstants.DEFAULT_EQ_MODE, "eqMode");
+        this.__eqBands = this.createStorageLink('eqBands', CommonConstants.DEFAULT_EQ_PRESET, "eqBands");
         this.__sheetHeight = new ObservedPropertySimplePU(340, this, "sheetHeight");
         this.__isShow = new ObservedPropertySimplePU(false, this, "isShow");
         this.timer = 0;
@@ -82,6 +92,9 @@ class Player extends ViewPU {
         this.pageInfos = new NavPathStack();
         this.windowClass = AppStorage.get('windowClass');
         this.setInitiallyProvidedValue(params);
+        this.declareWatch("eqEnabled", this.onEQEnabledChange);
+        this.declareWatch("eqMode", this.onEQModeChange);
+        this.declareWatch("eqBands", this.onEQBandsChange);
         this.finalizeConstruction();
     }
     setInitiallyProvidedValue(params: Player_Params) {
@@ -133,6 +146,9 @@ class Player extends ViewPU {
         this.__isDisabled.purgeDependencyOnElmtId(rmElmtId);
         this.__autoBalanceEnabled.purgeDependencyOnElmtId(rmElmtId);
         this.__compressionRatio.purgeDependencyOnElmtId(rmElmtId);
+        this.__eqEnabled.purgeDependencyOnElmtId(rmElmtId);
+        this.__eqMode.purgeDependencyOnElmtId(rmElmtId);
+        this.__eqBands.purgeDependencyOnElmtId(rmElmtId);
         this.__sheetHeight.purgeDependencyOnElmtId(rmElmtId);
         this.__isShow.purgeDependencyOnElmtId(rmElmtId);
     }
@@ -145,6 +161,9 @@ class Player extends ViewPU {
         this.__isDisabled.aboutToBeDeleted();
         this.__autoBalanceEnabled.aboutToBeDeleted();
         this.__compressionRatio.aboutToBeDeleted();
+        this.__eqEnabled.aboutToBeDeleted();
+        this.__eqMode.aboutToBeDeleted();
+        this.__eqBands.aboutToBeDeleted();
         this.__sheetHeight.aboutToBeDeleted();
         this.__isShow.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
@@ -206,6 +225,27 @@ class Player extends ViewPU {
     set compressionRatio(newValue: number) {
         this.__compressionRatio.set(newValue);
     }
+    private __eqEnabled: ObservedPropertyAbstractPU<boolean>;
+    get eqEnabled() {
+        return this.__eqEnabled.get();
+    }
+    set eqEnabled(newValue: boolean) {
+        this.__eqEnabled.set(newValue);
+    }
+    private __eqMode: ObservedPropertyAbstractPU<number>;
+    get eqMode() {
+        return this.__eqMode.get();
+    }
+    set eqMode(newValue: number) {
+        this.__eqMode.set(newValue);
+    }
+    private __eqBands: ObservedPropertyAbstractPU<number[]>;
+    get eqBands() {
+        return this.__eqBands.get();
+    }
+    set eqBands(newValue: number[]) {
+        this.__eqBands.set(newValue);
+    }
     private __sheetHeight: ObservedPropertySimplePU<number>;
     get sheetHeight() {
         return this.__sheetHeight.get();
@@ -224,7 +264,7 @@ class Player extends ViewPU {
         {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
-                    let componentCall = new VolumeSettingComponent(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 53, col: 5 });
+                    let componentCall = new VolumeSettingComponent(this, {}, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 57, col: 5 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {};
@@ -247,6 +287,14 @@ class Player extends ViewPU {
         this.getImageColor();
         this.keyIntercept();
         this.audioRendererController = AppStorage.get('audioRendererController');
+        // Log initial EQ settings
+        Logger.info('Player', `Initial EQ settings - Enabled: ${this.eqEnabled}, Mode: ${this.eqMode}, Bands: ${JSON.stringify(this.eqBands)}`);
+        Logger.info('Player', `EQ change listeners registered for Player component`);
+        // Test EQ re-application on startup
+        if (this.audioRendererController) {
+            Logger.info('Player', 'Testing EQ re-application on startup');
+            this.reapplyEQSettings();
+        }
         let systemBarProperties: window.SystemBarProperties = {
             statusBarContentColor: '#ffffff',
             statusBarColor: this.imageColor
@@ -283,7 +331,7 @@ class Player extends ViewPU {
             // Clicked the event callback on the volume button.
             this.volumeUpCallBackFunc = (event: KeyEvent) => {
                 if (this.isDisabled) {
-                    this.getUIContext().getPromptAction().showToast({ message: { "id": 16777239, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } });
+                    this.getUIContext().getPromptAction().showToast({ message: { "id": 16777254, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } });
                     return;
                 }
                 this.systemVolumeVisible = true;
@@ -296,7 +344,7 @@ class Player extends ViewPU {
             // Clicked the volume button and triggered the event callback.
             this.volumeDownCallBackFunc = (event: KeyEvent) => {
                 if (this.isDisabled) {
-                    this.getUIContext().getPromptAction().showToast({ message: { "id": 16777238, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } });
+                    this.getUIContext().getPromptAction().showToast({ message: { "id": 16777253, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } });
                     return;
                 }
                 this.systemVolumeVisible = true;
@@ -328,7 +376,7 @@ class Player extends ViewPU {
                         if (isInitialRender) {
                             let componentCall = new 
                             // Do not display the system volume bar.
-                            SetVolume(this, { volume: this.volume }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 144, col: 9 });
+                            SetVolume(this, { volume: this.volume }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 159, col: 9 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -376,7 +424,7 @@ class Player extends ViewPU {
                             SystemVolumePanel(this, {
                                 volume: this.__volume,
                                 volumeVisible: this.__systemVolumeVisible
-                            }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 147, col: 11 });
+                            }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 162, col: 11 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -415,7 +463,7 @@ class Player extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new ControlAreaComponent(this, { songData: songDataList[0], imageColor: this.imageColor }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 184, col: 11 });
+                            let componentCall = new ControlAreaComponent(this, { songData: songDataList[0], imageColor: this.imageColor }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 199, col: 11 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -474,7 +522,7 @@ class Player extends ViewPU {
             });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777244, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Image.create({ "id": 16777259, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Image.width(20);
             Image.height(20);
         }, Image);
@@ -489,14 +537,14 @@ class Player extends ViewPU {
             Row.bindSheet({ value: this.isShow, changeEvent: newValue => { this.isShow = newValue; } }, { builder: this.volumeSettingBuilder.bind(this) }, {
                 height: this.sheetHeight,
                 backgroundColor: '#FFFFFF',
-                title: { title: { "id": 16777236, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }
+                title: { title: { "id": 16777251, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" } }
             });
             Row.onClick(() => {
                 this.isShow = true;
             });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Image.create({ "id": 16777256, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Image.create({ "id": 16777271, "type": 20000, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Image.width(24);
             Image.height(24);
         }, Image);
@@ -597,6 +645,32 @@ class Player extends ViewPU {
             Logger.error(`getMediaContent error: ${error.code}, message: ${error.message}`);
         });
     }
+    // Called when EQ enabled state changes
+    onEQEnabledChange(): void {
+        Logger.info('Player', `EQ enabled changed to: ${this.eqEnabled}`);
+        this.reapplyEQSettings();
+    }
+    // Called when EQ mode changes
+    onEQModeChange(): void {
+        Logger.info('Player', `EQ mode changed to: ${this.eqMode}`);
+        this.reapplyEQSettings();
+    }
+    // Called when EQ bands change
+    onEQBandsChange(): void {
+        Logger.info('Player', `EQ bands changed: ${JSON.stringify(this.eqBands)}`);
+        this.reapplyEQSettings();
+    }
+    // Re-apply EQ settings to audio renderer
+    private reapplyEQSettings(): void {
+        if (this.audioRendererController) {
+            Logger.info('Player', 'Re-applying EQ settings to audio renderer');
+            this.audioRendererController.reapplyEQ();
+            Logger.info('Player', `EQ settings changed - Enabled: ${this.eqEnabled}, Mode: ${this.eqMode}, Bands: ${JSON.stringify(this.eqBands)}`);
+        }
+        else {
+            Logger.warn('Player', 'audioRendererController is undefined, cannot reapply EQ settings');
+        }
+    }
     rerender() {
         this.updateDirtyElements();
     }
@@ -613,6 +687,9 @@ class VolumeSettingComponent extends ViewPU {
         this.__autoBalanceEnabled = this.createStorageLink('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED, "autoBalanceEnabled");
         this.__compressionRatio = this.createStorageLink('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO, "compressionRatio");
         this.__isDisabled = this.createStorageLink('isDisabled', false, "isDisabled");
+        this.__eqEnabled = this.createStorageLink('eqEnabled', CommonConstants.DEFAULT_EQ_ENABLED, "eqEnabled");
+        this.__eqMode = this.createStorageLink('eqMode', CommonConstants.DEFAULT_EQ_MODE, "eqMode");
+        this.__eqBands = this.createStorageLink('eqBands', CommonConstants.DEFAULT_EQ_PRESET, "eqBands");
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
     }
@@ -624,11 +701,17 @@ class VolumeSettingComponent extends ViewPU {
         this.__autoBalanceEnabled.purgeDependencyOnElmtId(rmElmtId);
         this.__compressionRatio.purgeDependencyOnElmtId(rmElmtId);
         this.__isDisabled.purgeDependencyOnElmtId(rmElmtId);
+        this.__eqEnabled.purgeDependencyOnElmtId(rmElmtId);
+        this.__eqMode.purgeDependencyOnElmtId(rmElmtId);
+        this.__eqBands.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
         this.__autoBalanceEnabled.aboutToBeDeleted();
         this.__compressionRatio.aboutToBeDeleted();
         this.__isDisabled.aboutToBeDeleted();
+        this.__eqEnabled.aboutToBeDeleted();
+        this.__eqMode.aboutToBeDeleted();
+        this.__eqBands.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
@@ -653,12 +736,33 @@ class VolumeSettingComponent extends ViewPU {
     set isDisabled(newValue: boolean) {
         this.__isDisabled.set(newValue);
     }
+    private __eqEnabled: ObservedPropertyAbstractPU<boolean>;
+    get eqEnabled() {
+        return this.__eqEnabled.get();
+    }
+    set eqEnabled(newValue: boolean) {
+        this.__eqEnabled.set(newValue);
+    }
+    private __eqMode: ObservedPropertyAbstractPU<number>;
+    get eqMode() {
+        return this.__eqMode.get();
+    }
+    set eqMode(newValue: number) {
+        this.__eqMode.set(newValue);
+    }
+    private __eqBands: ObservedPropertyAbstractPU<number[]>;
+    get eqBands() {
+        return this.__eqBands.get();
+    }
+    set eqBands(newValue: number[]) {
+        this.__eqBands.set(newValue);
+    }
     initialRender() {
         this.observeComponentCreation2((elmtId, isInitialRender) => {
             Column.create();
             Column.backgroundColor('#FFFFFF');
             Column.width('100%');
-            Column.height(400);
+            Column.height(500);
             Column.padding({
                 top: 12,
                 bottom: 16
@@ -673,7 +777,7 @@ class VolumeSettingComponent extends ViewPU {
             Row.margin({ bottom: 8 });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777225, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.create({ "id": 16777227, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -701,15 +805,15 @@ class VolumeSettingComponent extends ViewPU {
             this.observeComponentCreation2((elmtId, isInitialRender) => {
                 if (isInitialRender) {
                     let componentCall = new VolumePanelView(this, {
-                        text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
+                        text: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
                         volumeVisible: true,
                         volumeType: VolumeType.AUDIOSTREAM,
                         Percentage: 50
-                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 364, col: 9 });
+                    }, undefined, elmtId, () => { }, { page: "entry/src/main/ets/pages/Player.ets", line: 411, col: 9 });
                     ViewPU.create(componentCall);
                     let paramsLambda = () => {
                         return {
-                            text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
+                            text: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
                             volumeVisible: true,
                             volumeType: VolumeType.AUDIOSTREAM,
                             Percentage: 50
@@ -719,7 +823,7 @@ class VolumeSettingComponent extends ViewPU {
                 }
                 else {
                     this.updateStateVarsOfChildByElmtId(elmtId, {
-                        text: { "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
+                        text: { "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" },
                         volumeVisible: true,
                         volumeType: VolumeType.AUDIOSTREAM,
                         Percentage: 50
@@ -755,10 +859,9 @@ class VolumeSettingComponent extends ViewPU {
             Row.margin({ bottom: 12 });
         }, Row);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777222, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.create({ "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Text.fontSize(16);
             Text.fontColor('#182431');
-            Text.fontWeight(FontWeight.Medium);
         }, Text);
         Text.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -781,7 +884,7 @@ class VolumeSettingComponent extends ViewPU {
                     }, Column);
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         // 音量平衡功能说明
-                        Text.create({ "id": 16777261, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+                        Text.create({ "id": 16777225, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
                         // 音量平衡功能说明
                         Text.fontSize(12);
                         // 音量平衡功能说明
@@ -812,7 +915,7 @@ class VolumeSettingComponent extends ViewPU {
                         Row.height(48);
                     }, Row);
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
-                        Text.create({ "id": 16777232, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+                        Text.create({ "id": 16777226, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
                     }, Text);
                     Text.pop();
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
@@ -860,7 +963,57 @@ class VolumeSettingComponent extends ViewPU {
         If.pop();
         // Auto Balance Volume Control
         Column.pop();
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            Divider.create();
+            Divider.backgroundColor('#F1F3F5');
+            Divider.padding({ left: 16, right: 16 });
+            Divider.width('100%');
+        }, Divider);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // EQ Settings
+            Column.create();
+            // EQ Settings
+            Column.padding({ left: 16, right: 16 });
+            // EQ Settings
+            Column.width('100%');
+        }, Column);
+        this.observeComponentCreation2((elmtId, isInitialRender) => {
+            // EQ Settings Button
+            Button.createWithLabel('EQ Settings', { type: ButtonType.Normal });
+            // EQ Settings Button
+            Button.width('100%');
+            // EQ Settings Button
+            Button.height(48);
+            // EQ Settings Button
+            Button.backgroundColor('#F0F7FF');
+            // EQ Settings Button
+            Button.fontColor('#0A59F7');
+            // EQ Settings Button
+            Button.onClick(() => {
+                // Navigate to EQ page
+                router.pushUrl({
+                    url: 'pages/EQPage'
+                });
+            });
+            // EQ Settings Button
+            Button.margin({ bottom: 12 });
+        }, Button);
+        // EQ Settings Button
+        Button.pop();
+        // EQ Settings
         Column.pop();
+        Column.pop();
+    }
+    private getEQPresetName(): string {
+        switch (this.eqMode) {
+            case 0: return 'Flat';
+            case 1: return 'Rock';
+            case 2: return 'Pop';
+            case 3: return 'Jazz';
+            case 4: return 'Classical';
+            case 5: return 'Custom';
+            default: return 'Flat';
+        }
     }
     rerender() {
         this.updateDirtyElements();

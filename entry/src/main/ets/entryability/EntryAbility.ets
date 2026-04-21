@@ -34,6 +34,11 @@ export default class EntryAbility extends UIAbility {
     AppStorage.setOrCreate('autoBalanceEnabled', CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED);
     AppStorage.setOrCreate('compressionRatio', CommonConstants.DEFAULT_COMPRESSION_RATIO);
     
+    // Initialize AppStorage values for EQ feature
+    AppStorage.setOrCreate('eqEnabled', CommonConstants.DEFAULT_EQ_ENABLED);
+    AppStorage.setOrCreate('eqMode', CommonConstants.DEFAULT_EQ_MODE);
+    AppStorage.setOrCreate('eqBands', CommonConstants.DEFAULT_EQ_PRESET);
+    
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');
   }
 

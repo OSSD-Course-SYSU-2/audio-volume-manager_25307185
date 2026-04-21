@@ -31,11 +31,11 @@ export class SongData {
     /**
      * Music logo information.
      */
-    mark: Resource = { "id": 16777234, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" };
+    mark: Resource = { "id": 16777249, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" };
     /**
      * Music avatar information.
      */
-    label: Resource = { "id": 16777234, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" };
+    label: Resource = { "id": 16777249, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" };
     /**
      * Music file path information.
      */

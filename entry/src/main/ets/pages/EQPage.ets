@@ -16,6 +16,7 @@
 import { CommonConstants } from '../common/CommonConstants';
 import { EQMode } from '../viewModel/PlayerViewModel';
 import router from '@ohos.router';
+import { AudioRendererController } from '../player/AudioRendererController';
 
 @Builder
 export function EQPageBuilder(name: string, param: Object) {
@@ -30,12 +31,12 @@ struct EQPage {
   @StorageLink('eqBands') eqBands: number[] = CommonConstants.DEFAULT_EQ_PRESET;
   
   @State presetOptions: string[] = [
-    $r('app.string.eq_preset_flat'),
-    $r('app.string.eq_preset_rock'),
-    $r('app.string.eq_preset_pop'),
-    $r('app.string.eq_preset_jazz'),
-    $r('app.string.eq_preset_classical'),
-    $r('app.string.eq_preset_custom')
+    'Flat',
+    'Rock',
+    'Pop',
+    'Jazz',
+    'Classical',
+    'Custom'
   ];
   
   @State selectedPresetIndex: number = 0;
@@ -48,25 +49,12 @@ struct EQPage {
     Column() {
       // Header
       Row() {
-        Image($r('app.media.chevron_left'))
-          .width(24)
-          .height(24)
-          .onClick(() => {
-            router.back();
-          })
-        
         Text($r('app.string.eq_settings'))
           .fontSize(20)
           .fontWeight(FontWeight.Medium)
           .fontColor('#182431')
           .layoutWeight(1)
           .textAlign(TextAlign.Center)
-        
-        // Placeholder for alignment
-        Image($r('app.media.chevron_left'))
-          .width(24)
-          .height(24)
-          .opacity(0)
       }
       .width('100%')
       .padding({ left: 16, right: 16, top: 12, bottom: 12 })
@@ -77,7 +65,7 @@ struct EQPage {
         Column() {
           // EQ Enable Switch
           Row() {
-            Text($r('app.string.eq_enable'))
+            Text($r('app.string.enable_eq'))
               .fontSize(16)
               .fontColor('#182431')
               .fontWeight(FontWeight.Medium)
@@ -108,7 +96,7 @@ struct EQPage {
 
             // Preset options
             Column() {
-              ForEach(this.presetOptions, (item: string, index: number) => {
+              ForEach(this.presetOptions, (item: Resource, index: number) => {
                 Row() {
                   Text(item)
                     .fontSize(14)
@@ -116,9 +104,10 @@ struct EQPage {
                     .fontWeight(this.selectedPresetIndex === index ? FontWeight.Medium : FontWeight.Normal)
                   
                   if (this.selectedPresetIndex === index) {
-                    Image($r('app.media.ic_check'))
-                      .width(20)
-                      .height(20)
+                    Text('✓')
+                      .fontSize(16)
+                      .fontColor('#0A59F7')
+                      .fontWeight(FontWeight.Bold)
                       .margin({ left: 8 })
                   }
                 }
@@ -154,62 +143,97 @@ struct EQPage {
               .width('100%')
               .padding({ left: 16, right: 16 })
 
-            // EQ Band sliders
-            ForEach(CommonConstants.EQ_BAND_FREQUENCIES, (frequency: number, index: number) => {
-              Column() {
-                Row() {
-                  Text(CommonConstants.EQ_BAND_LABELS[index])
-                    .fontSize(14)
-                    .fontColor('#182431')
-                    .fontWeight(FontWeight.Medium)
-                  
-                  Text(`${this.eqBands[index].toFixed(1)} ${$r('app.string.eq_db')}`)
-                    .fontSize(14)
+            // EQ Band sliders - Vertical layout
+            Row() {
+              ForEach(CommonConstants.EQ_BAND_FREQUENCIES, (frequency: number, index: number) => {
+                Column() {
+                  // Current value label (above slider)
+                  Text(`${this.eqBands[index].toFixed(1)}`)
+                    .fontSize(11)
                     .fontColor('#0A59F7')
-                }
-                .justifyContent(FlexAlign.SpaceBetween)
-                .width('100%')
-                .margin({ bottom: 8 })
+                    .margin({ bottom: 4 })
 
-                Slider({
-                  value: this.eqBands[index],
-                  min: CommonConstants.MIN_EQ_GAIN,
-                  max: CommonConstants.MAX_EQ_GAIN,
-                  step: CommonConstants.EQ_GAIN_STEP,
-                  style: SliderStyle.InSet
-                })
-                .trackColor('#F1F3F5')
-                .selectedColor('#0A59F7')
-                .blockColor('#0A59F7')
-                .showSteps(true)
-                .showTips(true)
-                .onChange((value: number) => {
-                  this.eqBands[index] = value;
-                  // Mark as custom preset if user manually adjusts
-                  if (this.eqMode !== EQMode.CUSTOM) {
+                  // Vertical slider (reversed direction - top is max, bottom is min)
+                  Slider({
+                    value: this.eqBands[index],
+                    min: CommonConstants.MIN_EQ_GAIN,
+                    max: CommonConstants.MAX_EQ_GAIN,
+                    step: CommonConstants.EQ_GAIN_STEP,
+                    style: SliderStyle.InSet,
+                    direction: Axis.Vertical,
+                    reverse: true  // Reverse the slider direction
+                  })
+                  .trackColor('#F1F3F5')
+                  .selectedColor('#0A59F7')
+                  .blockColor('#0A59F7')
+                  .showSteps(false)
+                  .showTips(true)
+                  .width(6)  // Make slider thin
+                  .height(160)  // Set slider height
+                  .onChange((value: number) => {
+                    // Create a new array to ensure reactive update
+                    const newBands = [...this.eqBands];
+                    newBands[index] = value;
+                    this.eqBands = newBands;
+                    // Always mark as custom preset when user manually adjusts any band
                     this.eqMode = EQMode.CUSTOM;
                     this.selectedPresetIndex = EQMode.CUSTOM;
-                  }
-                })
-              }
-              .padding({ left: 16, right: 16, top: 12, bottom: 12 })
-              .backgroundColor('#FFFFFF')
-              .borderRadius(8)
-              .margin({ left: 16, right: 16, bottom: 8 })
-              .shadow({ radius: 2, color: '#0A000000', offsetX: 0, offsetY: 1 })
-            })
+                  })
+
+                  // Frequency label below slider
+                  Text(CommonConstants.EQ_BAND_LABELS[index])
+                    .fontSize(12)
+                    .fontColor('#182431')
+                    .fontWeight(FontWeight.Medium)
+                    .margin({ top: 8 })
+                }
+                .alignItems(HorizontalAlign.Center)
+                .justifyContent(FlexAlign.Center)
+                .layoutWeight(1)
+                .padding({ top: 12, bottom: 16 })
+                .backgroundColor('#FFFFFF')
+                .borderRadius(8)
+                .margin({ left: 4, right: 4 })
+                .shadow({ radius: 2, color: '#0A000000', offsetX: 0, offsetY: 1 })
+              })
+            }
+            .width('100%')
+            .padding({ left: 12, right: 12 })
+            .margin({ top: 8, bottom: 8 })
           }
           .margin({ top: 16 })
 
-          // Reset Button
-          Button($r('app.string.eq_reset'), { type: ButtonType.Normal })
+          // Done Button - Fixed at bottom
+          Button($r('app.string.done'), { type: ButtonType.Capsule })
             .width('90%')
             .height(48)
-            .backgroundColor('#F0F7FF')
-            .fontColor('#0A59F7')
-            .margin({ top: 24, bottom: 32 })
+            .backgroundColor('#0A59F7')
+            .fontColor('#FFFFFF')
+            .fontSize(16)
+            .fontWeight(FontWeight.Medium)
+            .margin({ top: 8, bottom: 16 })
             .onClick(() => {
-              this.resetToFlat();
+              router.back();
+            })
+            
+          // Test Button - For debugging EQ application
+          Button('Test EQ Apply', { type: ButtonType.Capsule })
+            .width('90%')
+            .height(48)
+            .backgroundColor('#FF6B6B')
+            .fontColor('#FFFFFF')
+            .fontSize(16)
+            .fontWeight(FontWeight.Medium)
+            .margin({ top: 8, bottom: 32 })
+            .onClick(() => {
+              // Manually trigger EQ re-application for testing
+              const audioRendererController: AudioRendererController | undefined = AppStorage.get('audioRendererController');
+              if (audioRendererController) {
+                audioRendererController.reapplyEQ();
+                console.log('EQ Test: Manually triggered EQ re-application');
+              } else {
+                console.log('EQ Test: audioRendererController not available');
+              }
             })
         }
         .width('100%')
@@ -227,6 +251,9 @@ struct EQPage {
     switch (presetIndex) {
       case EQMode.FLAT:
         this.eqBands = [...CommonConstants.DEFAULT_EQ_PRESET];
+        // Ensure mode is set to FLAT (though it's already set in onClick)
+        this.eqMode = EQMode.FLAT;
+        this.selectedPresetIndex = EQMode.FLAT;
         break;
       case EQMode.ROCK:
         this.eqBands = [...CommonConstants.ROCK_EQ_PRESET];
@@ -244,11 +271,5 @@ struct EQPage {
         // Keep current custom settings
         break;
     }
-  }
-
-  private resetToFlat(): void {
-    this.eqBands = [...CommonConstants.DEFAULT_EQ_PRESET];
-    this.eqMode = EQMode.FLAT;
-    this.selectedPresetIndex = EQMode.FLAT;
   }
 }

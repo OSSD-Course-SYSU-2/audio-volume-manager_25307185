@@ -4,7 +4,19 @@
 
 This project is developed based on Huawei's official demo code for [audio-volume-management](https://gitcode.com/HarmonyOS_Samples/audio-volume-management).
 
-This case demonstrates how to get volume, set volume, use gestures to adjust volume, customize volume panels, disable volume keys, and implement automatic volume balancing.
+This case demonstrates how to get volume, set volume, use gestures to adjust volume, customize volume panels, disable volume keys, implement automatic volume balancing, and 10-band equalizer (EQ) adjustment functionality.
+
+## Main Features
+- ✅ System volume management
+- ✅ Audio stream volume control
+- ✅ Gesture volume adjustment
+- ✅ Custom volume panels
+- ✅ Volume key blocking
+- ✅ Automatic volume balancing
+- ✅ 10-band equalizer (EQ) adjustment
+- ✅ 5 preset EQ modes (Flat, Rock, Pop, Jazz, Classical)
+- ✅ Custom EQ band adjustment
+- ✅ Real-time audio effect application
 
 ## Preview
 <img src="./screenshots/device/screenshot.png" width="320">
@@ -16,6 +28,8 @@ This case demonstrates how to get volume, set volume, use gestures to adjust vol
    - Slide the audio stream volume slider to increase or decrease music volume
    - Enable automatic volume balancing to smooth audio volume and avoid sudden changes
    - Adjust compression strength to control the intensity of the balancing effect
+   - Click the EQ Settings button to enter the EQ adjustment page
+   - In the EQ page, you can adjust 10 frequency bands, select preset modes, or customize settings for personalized sound
 
 ## Project Structure
 
@@ -36,9 +50,10 @@ This case demonstrates how to get volume, set volume, use gestures to adjust vol
 │  │  └──SongData.ets                  // Song entity
 │  ├──pages
 │  │  ├──Index.ets                     // Home page                             
-│  │  └──Player.ets                    // Playback page
+│  │  ├──Player.ets                    // Playback page
+│  │  └──EQPage.ets                    // EQ adjustment page
 │  ├──player                             
-│  │  ├──AudioRendererController.ets   // AudioRenderer playback control
+│  │  ├──AudioRendererController.ets   // AudioRenderer playback control (includes EQ processing)
 │  │  └──AudioVolumeController.ets     // AudioVolumeManager volume management
 │  ├──utils
 │  │  ├──ColorTools.ets                // Background color tools
@@ -54,6 +69,7 @@ This case demonstrates how to get volume, set volume, use gestures to adjust vol
 2. Manage audio stream volume through audioRenderer, slide audio stream volume bars to adjust audio stream volume size.
 3. Intercept volume keys by registering inputConsumer.on('keyPressed').
 4. Implement automatic volume balancing function to dynamically compress audio volume, avoid sudden volume changes, and provide a smoother listening experience.
+5. Implement 10-band equalizer (EQ) function for fine-tuning audio frequency bands, supporting preset modes and custom settings with real-time audio effect application.
 
 ## Related Permissions
 
@@ -62,6 +78,32 @@ Not applicable
 ## Dependencies
 
 Not applicable
+
+## Recent Updates
+
+### EQ Adjustment Function Fix (2024-04-21)
+Fixed the issue where EQ adjustments were not taking effect. Main improvements include:
+
+1. **Fixed EQ Algorithm**:
+   - Original algorithm only calculated average of positive gains, ignoring negative gains (attenuation)
+   - New algorithm calculates weighted average of all frequency bands, including both positive and negative gains
+   - Added frequency weights: low and high frequencies weight 1.2, mid frequencies weight 1.0
+   - Added volume limits: minimum volume 0.1, maximum volume 15
+
+2. **Added EQ Change Monitoring Mechanism**:
+   - Added `@Watch` decorators in Player component to monitor EQ setting changes
+   - Added `onEQEnabledChange`, `onEQModeChange`, `onEQBandsChange` methods
+   - Automatically re-applies EQ settings to audio renderer when EQ settings change
+
+3. **Fixed Volume State Inconsistency Issues**:
+   - Ensured `currentVolume` is correctly set when audio renderer initializes
+   - Added error handling in `reapplyEQ` method
+   - Added detailed logging for debugging
+
+4. **Added Testing Features**:
+   - Added "Test EQ Apply" button in EQ page
+   - Added EQ test logging when Player starts
+   - Enhanced error handling and state validation
 
 ## Constraints and Limitations
 

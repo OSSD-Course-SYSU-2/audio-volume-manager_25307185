@@ -45,6 +45,10 @@
       "value": "5、自动平衡音量功能可以平滑音频音量，避免突然变化。"
     },
     {
+      "name": "introduction_6",
+      "value": "6、均衡器设置可以调整音频频段以个性化音效。"
+    },
+    {
       "name": "playback_page",
       "value": "进入播放页"
     },
@@ -87,6 +91,70 @@
     {
       "name": "auto_balance_description",
       "value": "自动平衡音量功能可以平滑音频音量，避免音量突变。压缩强度越高，音量变化越小。"
+    },
+    {
+      "name": "eq_settings",
+      "value": "均衡器设置"
+    },
+    {
+      "name": "eq_enable",
+      "value": "启用均衡器"
+    },
+    {
+      "name": "eq_preset",
+      "value": "均衡器预设"
+    },
+    {
+      "name": "eq_preset_flat",
+      "value": "平坦"
+    },
+    {
+      "name": "eq_preset_rock",
+      "value": "摇滚"
+    },
+    {
+      "name": "eq_preset_pop",
+      "value": "流行"
+    },
+    {
+      "name": "eq_preset_jazz",
+      "value": "爵士"
+    },
+    {
+      "name": "eq_preset_classical",
+      "value": "古典"
+    },
+    {
+      "name": "eq_preset_custom",
+      "value": "自定义"
+    },
+    {
+      "name": "eq_reset",
+      "value": "重置为平坦"
+    },
+    {
+      "name": "eq_description",
+      "value": "调整均衡器以增强音质。每个频段控制特定的频率范围。"
+    },
+    {
+      "name": "eq_gain",
+      "value": "增益"
+    },
+    {
+      "name": "eq_db",
+      "value": "分贝"
+    },
+    {
+      "name": "back",
+      "value": "返回"
+    },
+    {
+      "name": "done",
+      "value": "完成"
+    },
+    {
+      "name": "enable_eq",
+      "value": "启用均衡器"
     }
   ]
 }

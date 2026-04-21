@@ -32,6 +32,7 @@ export class AudioRendererController {
   private fd: number = 0;
   private curMs: number = 0;
   private audioVolumeController: AudioVolumeController = new AudioVolumeController();
+  private currentVolume: number = CommonConstants.INITIAL_VOLUME; // Store current volume for EQ re-application
 
   // Initialization AudioRenderer.
   public async initAudioRenderer(fd: number, offset: number, length: number): Promise<void> {
@@ -154,9 +155,11 @@ export class AudioRendererController {
       if (stateGroup.indexOf(this.audioRenderer.state.valueOf()) === -1) {
         return;
       }
-      // Set the volume.
+      // Set the volume and store it for EQ re-application
       let audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
-      this.setVolume(audioStreamVolume * 15);
+      const initialVolume = audioStreamVolume * 15;
+      this.currentVolume = initialVolume; // Ensure currentVolume is set
+      this.setVolume(initialVolume);
       // Starting the AudioRenderer.
       this.audioRenderer.start((err: BusinessError) => {
         if (err) {
@@ -241,15 +244,27 @@ export class AudioRendererController {
   }
 
   public setVolume(value: number): void {
+    // Store current volume for EQ re-application
+    this.currentVolume = value;
+    
     // Get auto-balance settings
     const autoBalanceEnabled: boolean = AppStorage.get('autoBalanceEnabled') ?? CommonConstants.DEFAULT_AUTO_BALANCE_ENABLED;
     const compressionRatio: number = AppStorage.get('compressionRatio') ?? CommonConstants.DEFAULT_COMPRESSION_RATIO;
+    
+    // Get EQ settings
+    const eqEnabled: boolean = AppStorage.get('eqEnabled') ?? CommonConstants.DEFAULT_EQ_ENABLED;
+    const eqBands: number[] = AppStorage.get('eqBands') ?? CommonConstants.DEFAULT_EQ_PRESET;
     
     let finalVolume = value;
     
     // Apply auto-balance compression if enabled
     if (autoBalanceEnabled && this.audioVolumeController) {
       finalVolume = this.audioVolumeController.calculateDynamicCompression(value, compressionRatio);
+    }
+    
+    // Apply EQ processing if enabled
+    if (eqEnabled) {
+      finalVolume = this.applyEQ(finalVolume, eqBands);
     }
     
     // Set the volume to audio renderer (0-1 range)
@@ -260,5 +275,78 @@ export class AudioRendererController {
     
     // Store the compressed volume for reference
     AppStorage.setOrCreate('compressedVolume', finalVolume / 15);
+  }
+
+  // Apply EQ processing to the volume
+  private applyEQ(volume: number, eqBands: number[]): number {
+    // Simple EQ processing: calculate overall gain from EQ bands and apply it
+    // In a real implementation, this would apply frequency-specific filtering
+    // For now, we'll apply an overall gain adjustment based on EQ settings
+    
+    if (!eqBands || eqBands.length === 0) {
+      return volume;
+    }
+    
+    // Calculate overall gain from all EQ bands (include both positive and negative)
+    // Use weighted average based on typical frequency response
+    let totalGain = 0;
+    let totalWeight = 0;
+    
+    // Apply different weights to different frequency bands
+    // Low frequencies (bass) and high frequencies (treble) have more perceptual impact
+    const weights = [1.2, 1.1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.1, 1.2]; // 10 bands
+    
+    for (let i = 0; i < eqBands.length; i++) {
+      const gain = eqBands[i];
+      const weight = weights[i] || 1.0;
+      totalGain += gain * weight;
+      totalWeight += weight;
+    }
+    
+    // Calculate weighted average gain
+    const avgGain = totalWeight > 0 ? totalGain / totalWeight : 0;
+    
+    // Apply gain to volume (simple linear scaling)
+    // Convert dB gain to linear multiplier: 10^(gain/20)
+    const gainMultiplier = Math.pow(10, avgGain / 20);
+    
+    // Apply gain with volume limiting (max 15)
+    let eqVolume = volume * gainMultiplier;
+    
+    // Limit to maximum volume
+    if (eqVolume > 15) {
+      eqVolume = 15;
+    }
+    
+    // Also ensure minimum volume is not too low
+    if (eqVolume < 0.1) {
+      eqVolume = 0.1;
+    }
+    
+    Logger.info(TAG, `EQ applied: gain=${avgGain.toFixed(2)}dB, multiplier=${gainMultiplier.toFixed(3)}, volume=${volume.toFixed(2)}->${eqVolume.toFixed(2)}`);
+    
+    return eqVolume;
+  }
+
+  // Re-apply EQ settings when EQ bands change
+  public reapplyEQ(): void {
+    Logger.info(TAG, `reapplyEQ called, currentVolume: ${this.currentVolume}, audioRenderer: ${this.audioRenderer ? 'available' : 'undefined'}`);
+    
+    if (this.audioRenderer) {
+      // If currentVolume is not set, get it from AppStorage
+      let volumeToApply = this.currentVolume;
+      if (volumeToApply === undefined) {
+        const audioStreamVolume: number = AppStorage.get('audioStreamVolume') ?? 0.5;
+        volumeToApply = audioStreamVolume * 15;
+        this.currentVolume = volumeToApply;
+        Logger.info(TAG, `currentVolume was undefined, using AppStorage value: ${volumeToApply}`);
+      }
+      
+      // Re-apply volume with current EQ settings
+      this.setVolume(volumeToApply);
+      Logger.info(TAG, `EQ re-applied for volume: ${volumeToApply}`);
+    } else {
+      Logger.warn(TAG, `Cannot reapply EQ: audioRenderer is undefined`);
+    }
   }
 }

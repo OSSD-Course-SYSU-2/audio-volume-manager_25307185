@@ -5,15 +5,14 @@
         "MODULE_NAME": "923fe53966c6cd9343e11af776cd4b05be315ea4b200b02e4d5dfb0f929b73bf",
         "API_TYPE": "stageMode",
         "INCLUDE_IN_BUILD": true,
-        "IS_COMMAND_LINE_ENTRY_MODULE": true,
+        "IS_COMMAND_LINE_ENTRY_MODULE": false,
         "MODULE_TYPE": "entry",
         "IS_INCREMENTAL_MODULE": true
       }
     ],
     "NATIVE_COMPILER": "Default",
     "IS_FULL_BUILD": false,
-    "BUILD_MODE": "debug",
-    "USE_NORMALIZED_OHMURL": true
+    "BUILD_MODE": "debug"
   },
   "HVIGOR": {
     "IS_INCREMENTAL": true,
@@ -22,21 +21,20 @@
     "IS_HVIGORFILE_TYPE_CHECK": false,
     "TASK_TIME": {
       "923fe53966c6cd9343e11af776cd4b05be315ea4b200b02e4d5dfb0f929b73bf": {
-        "PreBuild": 29763100,
-        "CreateModuleInfo": 1070300,
-        "ConfigureCmake": 378200,
-        "PreCheckSyscap": 564800,
-        "ProcessIntegratedHsp": 1849400,
-        "BuildNativeWithCmake": 367000,
-        "SyscapTransform": 5722100,
-        "ProcessStartupConfig": 3706000,
-        "BuildNativeWithNinja": 813600,
-        "BuildJS": 4473100,
-        "ProcessCompiledResources": 956100,
-        "PackingCheck": 6150600,
-        "SignHap": 2272100,
-        "CollectDebugSymbol": 1650400,
-        "assembleHap": 213900
+        "CreateModuleInfo": 693400,
+        "ConfigureCmake": 364900,
+        "PreCheckSyscap": 349300,
+        "ProcessIntegratedHsp": 714200,
+        "BuildNativeWithCmake": 297900,
+        "SyscapTransform": 3574900,
+        "ProcessStartupConfig": 2796900,
+        "BuildNativeWithNinja": 701700,
+        "BuildJS": 4324900,
+        "ProcessCompiledResources": 801700,
+        "PackingCheck": 5367400,
+        "SignHap": 2653700,
+        "CollectDebugSymbol": 1406100,
+        "assembleHap": 187200
       }
     },
     "APIS": [
@@ -47,7 +45,7 @@
       "ENABLE_CPP_FUNCTION_LEVEL_INCREMENTAL": false
     },
     "CONFIG_PROPERTIES": {},
-    "TOTAL_TIME": 394524600,
-    "BUILD_ID": "202604142117523220"
+    "TOTAL_TIME": 398013800,
+    "BUILD_ID": "202604212319292800"
   }
 }

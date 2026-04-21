@@ -18,7 +18,8 @@ class Index extends ViewPU {
             'app.string.introduction_2',
             'app.string.introduction_3',
             'app.string.introduction_4',
-            'app.string.introduction_5'
+            'app.string.introduction_5',
+            'app.string.introduction_6'
         ];
         this.setInitiallyProvidedValue(params);
         this.finalizeConstruction();
@@ -53,7 +54,7 @@ class Index extends ViewPU {
             Column.width('100%');
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777224, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.create({ "id": 16777223, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Text.fontSize(30);
             Text.fontWeight(FontWeight.Bold);
             Text.width('100%');
@@ -96,7 +97,7 @@ class Index extends ViewPU {
             Column.borderRadius(16);
         }, Column);
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Text.create({ "id": 16777226, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Text.create({ "id": 16777241, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Text.fontSize(15);
             Text.lineHeight(20);
             Text.fontWeight(FontWeight.Bold);
@@ -125,7 +126,7 @@ class Index extends ViewPU {
         }, Blank);
         Blank.pop();
         this.observeComponentCreation2((elmtId, isInitialRender) => {
-            Button.createWithLabel({ "id": 16777235, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
+            Button.createWithLabel({ "id": 16777250, "type": 10003, params: [], "bundleName": "com.example.audiostreamvolumemanagement", "moduleName": "entry" });
             Button.width('100%');
             Button.buttonStyle(ButtonStyleMode.NORMAL);
             Button.onClick(() => {
